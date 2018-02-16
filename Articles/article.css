@@ -1,10 +1,39 @@
-body {
-background-color: #000;                        
+html, h1 {
+	margin: 0;
+	padding: 0;
+	margin-top: 0;
 }
 
-img {
-	display: block;
-	width: 1440;
+body {
+	background-color: #000; 
+	font-family: Kefa, Georgia;
+	font-size: 60px;   
+	text-align: left;
+	color: #FFFFFF;   
+	width: 1440px;
+	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+}
+
+h1 {
+	font-size: 220%;
+	color: #FFFFFF;
+	padding-top: 670px;
+	padding-left: 40px;
+}
+
+p {
+	margin-top: 40px 0 0 0;
+	padding-left: 40px;
+}
+
+#article-img {
+	display: block;
+	z-index: -10;
+	width: 1440;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
