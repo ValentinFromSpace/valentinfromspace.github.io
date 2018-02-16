@@ -17,12 +17,8 @@ img {
 }
 
 
-.grow img {
-	height: 347px;
-	width: 1440px;
-	left: 0px;
-	top: 0px;
-	margin-bottom: 20px;
+.grow p {
+	padding: 100px 0 100px 0
  
  	 -webkit-transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
  	    -moz-transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
@@ -31,17 +27,24 @@ img {
      	     transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
 }
  
-.grow img:hover {
-	left: -12px;
-	top: -1px;
-	height: 350px;
-	width: 1464px;
-	margin-bottom: 17px;
+.grow p:hover {
+	padding: 120px 0 120px 0
 }
 
 img#heading-pic {
 	height: 811px;
 	margin-bottom: 20
+}
+
+p {
+	height: 147px;
+	margin: 0;
+	padding: 100px 0px 100px 40px;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .article-headings {
