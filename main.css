@@ -1,10 +1,64 @@
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #000; 
+}
+
 body {
-background-color: #000;                        
+	font-family: Kefa, Georgia;
+	font-size: 60px;                       
+	width: 1440px;
+	margin: 0 auto 0 auto;
 }
 
 img {
 	display: block;
-	width: 1440;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+}
+
+
+.grow img {
+	height: 347px;
+	width: 1440px;
+	left: 0px;
+	top: 0px;
+	margin-bottom: 20px;
+ 
+ 	 -webkit-transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
+ 	    -moz-transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
+  	   	  -o-transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
+  	     -ms-transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
+     	     transition: all 0.5s cubic-bezier(0.34, -0.98, 0.27, 2.64);
+}
+ 
+.grow img:hover {
+	left: -12px;
+	top: -1px;
+	height: 350px;
+	width: 1464px;
+	margin-bottom: 17px;
+}
+
+img#heading-pic {
+	height: 811px;
+	margin-bottom: 20
+}
+
+.article-headings {
+	font-size: 200%;
+	margin-top: 100px;
+	color: #FFFFFF;
+	margin: 100px;
+}
+
+#VriolinsStern {
+	background-image: url("Vriolins Stern.png");
+}
+
+#VarSundra {
+	background-image: url("Var Sundra.png");
+}
+
+#Kornfeld {
+	background-image: url(Kornfeld.png);
 }
