@@ -5,6 +5,7 @@ html {
 	padding: 0;
 	background-color: #000; 
 	background-image: url(Starss.png);
+	padding-bottom: 100px;
 }
 
 body {
@@ -17,10 +18,9 @@ body {
 h1 {
 	font-size: 90px;
 	color: #FFFFFF;
-	padding: 200px 400px 200px 200px;
-	margin-top: 0;
+	margin-bottom: 100px;
 	font-style: bold;
-	text-shadow: 0 0 150px #000;
+	text-align: center;
 }
 
 h1 em {
@@ -28,6 +28,31 @@ h1 em {
 	color: #FFFFFF;
 	font-style: normal;
 	font-style: bold;
+	margin-bottom: 100px;
+}
+
+nav {
+	display: flex;
+}
+
+nav li {
+	flex-grow: 1;
+	padding-right: 40px;
+	padding-left: 40px; 
+	margin-bottom: 50px;
+	display: inline;
+}
+
+#stories {
+	text-align: right;
+	border-right: 1px solid #FFFFFF;
+}
+
+
+h2 {
+	color: #FFFFFF;
+	font-size: 48px;
+	font-weight: normal;
 }
 
 img {
@@ -37,7 +62,9 @@ img {
 
 img#heading-pic {
 	height: 811px;
-	margin-bottom: 20
+	margin-bottom: 20;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 p {
