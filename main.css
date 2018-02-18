@@ -53,6 +53,10 @@ nav a:hover {
 	color: #828282;
 }
 
+#clicked {
+	text-shadow: 0 0 90px #FFFFFF;	
+}
+
 #stories {
 	text-align: right;
 	border-right: 1px solid #FFFFFF;
@@ -114,6 +118,57 @@ a {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.summaries {
+	font-size: 36px;
+	background-image: url("text_bg.png");
+	padding: 15px 40px 24px 40px;
+}
+
+.note {
+	font-size: 20px;
+	padding-top: 70px;
+}
+
+#k-summary {
+	padding-bottom: 7px;
+}
+
+#k-note {
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+#vars-summary {
+	padding-bottom: 47px;
+}
+
+#about-heading {
+	font-size: 150%;
+	background-image: url("About Imagee.png");
+}
+
+#about-text {
+	background-image: url(about-text-bg.png);
+	font-size: 36px;
+	padding: 15px 40px 768px 40px;
+}
+
+#contact-heading {
+	font-size: 150%;
+	background-image: url("Contact Image.png");
+	margin-top: 20px;
+}
+
+#contact-info {
+	background-image: url(text_bg.png);
+	font-size: 36px;
+	padding: 30px 40px 102px 40px;
+}
+
+#mail:hover {
+	text-decoration: underline;                    
 }
 
 .grow p {
