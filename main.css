@@ -33,6 +33,8 @@ h1 em {
 
 nav {
 	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 nav li {
@@ -41,6 +43,14 @@ nav li {
 	padding-left: 40px; 
 	margin-bottom: 50px;
 	display: inline;
+}
+
+nav a {
+	margin: 10px;
+}
+
+nav a:hover {
+	color: #828282;
 }
 
 #stories {
@@ -70,7 +80,7 @@ img#heading-pic {
 p {
 	height: 147px;
 	margin: 0;
-	padding: 100px 0px 100px 40px;
+	padding: 350px 0px 00px 40px;
 }
 
 a {
@@ -86,18 +96,24 @@ a {
 }
 
 #VriolinsStern {
-	background-image: url("Vriolins Stern.png");
+	background-image: url("Vriolins Stern Article Imagee.png");
 	margin-top: 20px;
 }
 
 #VarSundra {
-	background-image: url("Var Sundra.png");
+	background-image: url("Var Sundra Article Imagee.png");
 	margin-top: 20px;
 }
 
 #Kornfeld {
-	background-image: url(Kornfeld.png);
+	background-image: url("Kornfeld Article Imagee.png");
 	margin-top: 20px;
+}
+
+#earth {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .grow p {
