@@ -20,6 +20,39 @@ body {
 	z-index: 0;
 }
 
+nav {
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 30%;
+}
+
+nav li {
+	flex-grow: 100;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin-top: 100px; 
+	margin-bottom: 10px;
+	display: inline;
+}
+
+nav a {
+	margin: 10px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#home {
+	text-align: right;
+	border-right: 1px solid #FFFFFF;
+}
+
+nav a:hover {
+	color: #828282;
+	text-shadow: 0 0 90px #FFFFFF;
+}
+
+
 h1 {
 	font-size: 220%;
 	padding-top: 660px;
@@ -31,6 +64,7 @@ h1 {
 p {
 	margin-top: 40px 0 0 0;
 	padding-left: 40px;
+	padding-right: 40px;
 	z-index: 0;
 }
 
