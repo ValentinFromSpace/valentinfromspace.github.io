@@ -8,6 +8,14 @@ html {
 	background-color: #000;
 }
 
+#home {
+	font-size: 50%;
+	color: #FFFFFF;
+	position: fixed;
+	display: flex;
+	
+}
+
 body {
 	font-family: Kefa, Georgia;
 	font-size: 60px;   
