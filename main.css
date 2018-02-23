@@ -1,32 +1,36 @@
 /* Main */
 
 html {
-	background-image: url(starss.png);
-	background-color: #000;
 	font-family: Kefa, Georgia;
 	margin: 0 0 0 0;
 }
 
-h1 {
-	font-size: 90px;
-	color: #FFFFFF;
-	margin-top: 60px;
-	margin-bottom: 110px;
-	font-style: bold;
-	text-align: center;
+nav {
+	display: flex;
+	flex-direction: row;
+	background-color: #141D26;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 0 0;
 }
 
-h1 em {
-	font-size: 160px;
+li {
+	margin: 0px 20px 00px 20px;
+	color: #000;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
 	color: #FFFFFF;
-	font-style: normal;
-	font-style: bold;
-	margin-top: 60px;
-	margin-bottom: 110px;
+	font-size: 36px;
+}
+
+nav a:hover {
+	color: #828282;
 }
 
 .storiesCard {
 	display: flex;
-	color: #FFFFFF;
+	color: #000;
 	text-decoration: none;
 }
