@@ -3,6 +3,11 @@
 html {
 	font-family: Kefa, Georgia;
 	margin: 0 0 0 0;
+	background-color: #141D26;
+}
+
+body {
+	margin: 0 0 0 0;
 }
 
 nav {
@@ -35,7 +40,11 @@ a:hover {
 }
 
 a {
-	background-image: url("Stories Image.jpg");
+	text-decoration: none;
+}
+
+#presentation {
+	background-color: #FFF;
 }
 
 .header {
@@ -43,10 +52,46 @@ a {
 	color: #FFFFFF;
 	font-size: 144px;
 	text-decoration: none;
+	padding: 100px 100px 100px 100px;
 }
 
-#description {
-	display: flex;
+.description {
 	color: #FFFFFF;
 	font-size: 60px;
+	text-decoration: none;
+	padding: 100px 100px 100px 100px;
+}
+
+#stories {
+	background-image: url("Stories Image.jpg");
+	margin: 0 0 0 0;
+}
+
+#games {
+	background-image: url("Games Image.jpg");
+	margin: 0 0 0 0;
+}
+
+#photographs {
+	background-image: url("Photographs Image.jpg");
+	margin: 0 0 0 0;
+}
+
+#music {
+	background-image: url("Music Image.jpg");
+	margin: 0 0 0 0;
+}
+
+#ideas {
+	background-image: url("Ideas Image.jpg");
+	margin: 0 0 0 0;
+}
+
+#comedy {
+	background-image: url("Comedy Image.jpg");
+	margin: 0 0 0 0;
+}
+
+#photographs .header {
+	padding: 40px 40px 10px 40px;
 }
