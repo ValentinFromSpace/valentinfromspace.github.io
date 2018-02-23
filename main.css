@@ -13,24 +13,40 @@ nav {
 	margin: 0 0 0 0;
 }
 
-li {
-	margin: 0px 20px 00px 20px;
+nav li {
+	margin: 0px auto 0px auto;
 	color: #000;
 	list-style: none;
 }
 
 nav a {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 5;
+	flex-shrink: 5;
+	margin: 0 20px 0 20px;
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 36px;
 }
 
-nav a:hover {
+a:hover {
 	color: #828282;
 }
 
-.storiesCard {
+a {
+	background-image: url("Stories Image.jpg");
+}
+
+.header {
 	display: flex;
-	color: #000;
+	color: #FFFFFF;
+	font-size: 144px;
 	text-decoration: none;
+}
+
+#description {
+	display: flex;
+	color: #FFFFFF;
+	font-size: 60px;
 }
