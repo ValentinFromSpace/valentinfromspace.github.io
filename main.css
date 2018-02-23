@@ -3,19 +3,37 @@
 html {
 	font-family: Kefa, Georgia;
 	margin: 0 0 0 0;
-	background-color: #141D26;
+
+	background-position: top;
+	display: block;
 }
 
 body {
+	display: block;
 	margin: 0 0 0 0;
+}
+
+p {
+	margin: 0;
 }
 
 nav {
 	display: flex;
+	position: fixed;
 	flex-direction: row;
-	background-color: #141D26;
-	padding: 10px 10px 10px 10px;
-	margin: 0 0 0 0;
+	background-color: rgba(20, 29, 38, 0.9);
+	padding: 20px 10px 20px 10px;
+	margin: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+}
+
+img#first-line {
+	position: fixed;
+	margin: 0;
+	z-index: 10;
 }
 
 nav li {
@@ -26,9 +44,6 @@ nav li {
 
 nav a {
 	display: flex;
-	flex-wrap: wrap;
-	flex-grow: 5;
-	flex-shrink: 5;
 	margin: 0 20px 0 20px;
 	text-decoration: none;
 	color: #FFFFFF;
@@ -43,8 +58,16 @@ a {
 	text-decoration: none;
 }
 
+img {
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
 #presentation {
-	background-color: #FFF;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .header {
@@ -52,46 +75,79 @@ a {
 	color: #FFFFFF;
 	font-size: 144px;
 	text-decoration: none;
-	padding: 100px 100px 100px 100px;
+	padding: 300px 100px 0px 100px;
+	text-shadow: 0 0 50px #000;
 }
 
 .description {
 	color: #FFFFFF;
 	font-size: 60px;
 	text-decoration: none;
-	padding: 100px 100px 100px 100px;
+	padding: 0px 100px 300px 100px;
+	text-shadow: 0 0 50px #000;
+}
+
+.big-link {
+	text-shadow: 0 0 150px #000;
+	background-repeat: no-repeat;
+	z-index: 1;
+	position: relative;
+	margin: 0 auto 0 auto;
 }
 
 #stories {
 	background-image: url("Stories Image.jpg");
-	margin: 0 0 0 0;
+	margin: 83px auto 0 auto;
 }
 
 #games {
 	background-image: url("Games Image.jpg");
-	margin: 0 0 0 0;
 }
 
 #photographs {
 	background-image: url("Photographs Image.jpg");
-	margin: 0 0 0 0;
 }
 
 #music {
 	background-image: url("Music Image.jpg");
-	margin: 0 0 0 0;
 }
 
 #ideas {
 	background-image: url("Ideas Image.jpg");
-	margin: 0 0 0 0;
 }
 
 #comedy {
 	background-image: url("Comedy Image.jpg");
-	margin: 0 0 0 0;
 }
 
 #photographs .header {
-	padding: 40px 40px 10px 40px;
+	padding: 230px 40px 10px 40px;
+}
+
+#photographs .description {
+	padding: 0px 40px 230px 40px;
+}
+
+#stories .header {
+	padding: 385px 100px 10px 100px;
+}
+
+#stories .description {
+	padding: 0 100px 385px 100px;
+}
+
+#games .header {
+	padding: 370px 100px 10px 800px;
+}
+
+#games .description {
+	padding: 0 100px 370px 800px;
+}
+
+#ideas .header {
+	padding: 320px 300px 10px 700px;
+}
+
+#ideas .description {
+	padding: 0 300px 320px 700px;
 }
