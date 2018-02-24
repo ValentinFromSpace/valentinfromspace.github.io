@@ -63,7 +63,7 @@ nav a {
 	position: fixed;
 	width: 200px;
 	font-size: 20px;
-	color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 1);
 	bottom: 10px;
 	z-index: -10;
 	right: 50%;
