@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--<script type="text/javascript">
-			var wf_pbb_object = [
-			{bc:"rgba(0, 0, 0, 0)"},
-			{img:"file:BackgroundBlur.jpg", mm:true, ms:true, mms:1, mss:10, mmd:1, mso:"v", msd:1, im:"pattern", pr:"both", mma:"y", ofs:{x:0, y:0}, zi:1, sr:false, sb:false, isr:true, isb:true}
-			];
+		<!-- Hotjar Tracking Code for valentinwalter.space -->
+		<script>
+    		(function(h,o,t,j,a,r){
+       			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+       			h._hjSettings={hjid:792397,hjsv:6};
+		        a=o.getElementsByTagName('head')[0];
+		        r=o.createElement('script');r.async=1;
+		        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		        a.appendChild(r);
+    		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 		</script>
-		<script type="text/javascript" src="http://web-features.net/api/wf.pbb.api.js"></script>!-->
 		<link rel="icon" type="image/png" src="Favicon.png">
 		<title>Homepage | Stories by Valentin Walter</title>
 		<link href="main.css" type="text/css" rel="stylesheet">
@@ -24,6 +28,9 @@
 			<li id="about-link"><a href="about.html" id="clicked">About</a></li>
 		</nav>
 		<div>
+			<div id="info-container">
+				<p id="info">scroll down</p>
+			</div>
 			<div class="big-link" id="stories">
 				<a href="stories.html"><p class="header">Stories</p>
 					<p class="description">Read epic short-stories!</p>
@@ -44,13 +51,13 @@
 			<img class="line" src="Line.png">
 			<div class="big-link" id="music">
 				<a href="music.html"><p class="header">Music</p>
-					<p class="description">Listen to impressive beats!</p>
+					<p class="description">Listen to heavy beats!</p>
 				</a>
 			</div>
 			<img class="line" src="Line.png">
 			<div class="big-link" id="ideas">
 				<a href="ideas.html"><p class="header">Ideas</p>
-					<p class="description">Read some inspiring ideas!</p>
+					<p class="description">Read inspiring ideas!</p>
 				</a>
 			</div>
 			<img class="line" src="Line.png">
@@ -59,13 +66,21 @@
 					<p class="description">Watch the most hillarious videos!</p>
 				</a>
 			</div>
-			<img class="line" src="Line.png">
+			<imgi class="line" src="Line.png">
 		</div>
-		<div class="lining">
-			<p>Contact</p>
-			<p>Subscribe to newsletter</p>
-			<p>Topics</p>
-			<p>Legal</p>
+		<div id="lining">
+			<div class="pair">
+				<li><a href="about.html#contact-heading"><p>Contact</p></a></li>
+				<li><a href="newsletter.html"><p>Subscribe to newsletter</p></a></li>
+			</div>
+			<div class="pair">
+				<li><a href="topics.html"><p>Topics</p></a></li>
+				<li><a id="legal"><p>Legal</p></a></li>
+			</div>
+			<div class="pair">
+				<li><a href="https://twitter.com/ValFromSpace"><p>Find me on Twitter!</p></a></li>
+				<li><a href="recommendations.html"><p>Stuff you should check out!</p></a></li>
+			</div>
 		</div>
 	</body>
 </html>

@@ -4,9 +4,11 @@ html {
 	font-family: Kefa, Georgia;
 	margin: 0 0 0 0;
 	background-color: #000;
-	background-image: url(BackgroundBlur.jpg);
+	background-image: url(clouds.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: top center;
+	background-position: top center left;
 }
 
 body {
@@ -21,7 +23,8 @@ nav {
 	display: flex;
 	position: fixed;
 	flex-direction: row;
-	background-color: rgba(20, 29, 38, 0.9);
+	background-color: rgba(20, 29, 38, 0.5);
+	filter: blur(10px);
 	background-image: url(Line.png);
 	background-position: bottom;
 	background-repeat: no-repeat; 
@@ -56,18 +59,61 @@ nav a {
 	font-size: 36px;
 }
 
+#info {
+	display: flex;
+	position: fixed;
+	width: 200px;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.1);
+	bottom: 10px;
+	z-index: -10;
+	right: 50%;
+	left: 50%;
+}
+
 a:hover {
 	color: #828282;
 }
 
 a {
 	text-decoration: none;
+	color: #FFF;
 }
 
 img {
 	display: block;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+}
+
+#lining {
+	display: flex;
+	flex-direction: row;
+	color: #FFF;
+	background-color: rgba(20, 29, 38, 0.9);
+	background-image: url(Line.png);
+	background-position: top;
+	background-repeat: no-repeat; 
+	background-size: 100% auto;
+	padding: 20px 10px 20px 10px;
+	margin: 0;
+	margin-top: 100px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+li {
+	margin: 10px auto 0px auto;
+	color: #000;
+	list-style: none;
+}
+
+.pair {
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	margin: 0 auto 0 100px;
 }
 
 #presentation {
@@ -82,10 +128,39 @@ img {
 	font-size: 144px;
 	text-decoration: none;
 	padding: 300px 100px 0px 100px;
-	text-shadow: 0 0 50px #000;
+	text-shadow: 0 0 100px #000;
+
+	-webkit-transition: all 0.5s ease;
+ 	    -moz-transition: all 0.5s ease;
+  	   	  -o-transition: all 0.5s ease;
+  	     -ms-transition: all 0.5s ease;
+     	     transition: all 0.5s ease;
 }
 
 .description {
+	color: #FFFFFF;
+	font-size: 60px;
+	text-decoration: none;
+	padding: 0px 100px 300px 100px;
+	text-shadow: 0 0 100px #000;
+
+	-webkit-transition: all 0.5s ease;
+ 	    -moz-transition: all 0.5s ease;
+  	   	  -o-transition: all 0.5s ease;
+  	     -ms-transition: all 0.5s ease;
+     	     transition: all 0.5s ease;
+}
+
+.header:hover {
+	display: flex;
+	color: #FFFFFF;
+	font-size: 144px;
+	text-decoration: none;
+	padding: 300px 100px 0px 100px;
+	text-shadow: 0 0 50px #000;
+}
+
+.description:hover {
 	color: #FFFFFF;
 	font-size: 60px;
 	text-decoration: none;
@@ -96,9 +171,24 @@ img {
 .big-link {
 	display: flex;
 	width: 1650px;
-	text-shadow: 0 0 150px #000;
 	background-repeat: no-repeat;
 	z-index: 1;
+	position: relative;
+	margin: 0 auto 0 auto;
+
+	-webkit-transition: all 0.5s ease;
+ 	   -moz-transition: all 0.5s ease;
+  	     -o-transition: all 0.5s ease;
+  	    -ms-transition: all 0.5s ease;
+     	    transition: all 0.5s ease;
+}
+
+.big-link:hover {
+	display: flex;
+	width: 1650px;
+	box-shadow: 0 0 50px #000;
+	background-repeat: no-repeat;
+	z-index: 2;
 	position: relative;
 	margin: 0 auto 0 auto;
 }
@@ -109,8 +199,10 @@ img {
 }
 
 #stories {
-	background-image: url("Stories Image.jpg");
-	margin: 83px auto 0 auto;
+	display: flex;
+	background-image: url("StoriesImage.jpg");
+	margin: 1450px auto 0 auto;
+	align-self: flex-end; 
 }
 
 #games {
@@ -142,11 +234,11 @@ img {
 }
 
 #stories .header {
-	padding: 385px 100px 10px 100px;
+	padding: 450px 100px 10px 100px;
 }
 
 #stories .description {
-	padding: 0 100px 385px 100px;
+	padding: 0 100px 450px 100px;
 }
 
 #games .header {
