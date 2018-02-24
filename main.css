@@ -23,8 +23,7 @@ nav {
 	display: flex;
 	position: fixed;
 	flex-direction: row;
-	background-color: rgba(20, 29, 38, 0.5);
-	filter: blur(10px);
+	background-color: rgba(20, 29, 38, 0.7);
 	background-image: url(Line.png);
 	background-position: bottom;
 	background-repeat: no-repeat; 
