@@ -3,13 +3,13 @@
 html {
 	font-family: Kefa, Georgia;
 	margin: 0 0 0 0;
-
-	background-position: top;
-	display: block;
+	background-color: #000;
+	background-image: url(BackgroundBlur.jpg);
+	background-attachment: fixed;
+	background-position: top center;
 }
 
 body {
-	display: block;
 	margin: 0 0 0 0;
 }
 
@@ -22,6 +22,10 @@ nav {
 	position: fixed;
 	flex-direction: row;
 	background-color: rgba(20, 29, 38, 0.9);
+	background-image: url(Line.png);
+	background-position: bottom;
+	background-repeat: no-repeat; 
+	background-size: 100% auto;
 	padding: 20px 10px 20px 10px;
 	margin: 0;
 	top: 0;
@@ -30,10 +34,12 @@ nav {
 	z-index: 10;
 }
 
-img#first-line {
+div#first-line {
 	position: fixed;
 	margin: 0;
 	z-index: 10;
+	width: auto;
+
 }
 
 nav li {
@@ -88,10 +94,17 @@ img {
 }
 
 .big-link {
+	display: flex;
+	width: 1650px;
 	text-shadow: 0 0 150px #000;
 	background-repeat: no-repeat;
 	z-index: 1;
 	position: relative;
+	margin: 0 auto 0 auto;
+}
+
+.line {
+	width: 1650px;
 	margin: 0 auto 0 auto;
 }
 
@@ -145,9 +158,9 @@ img {
 }
 
 #ideas .header {
-	padding: 320px 300px 10px 700px;
+	padding: 300px 300px 10px 700px;
 }
 
 #ideas .description {
-	padding: 0 300px 320px 700px;
+	padding: 0 300px 300px 700px;
 }
