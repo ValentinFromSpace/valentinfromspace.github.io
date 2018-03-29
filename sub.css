@@ -193,7 +193,19 @@ a {
 #about-text {
 	background-image: url(about-text-bg.png);
 	font-size: 36px;
-	padding: 15px 40px 768px 40px;
+	padding: 15px 40px 0 40px;
+	margin-bottom: 40px;
+}
+
+#legal-heading {
+	font-size: 150%;
+	background-image: url("About Imagee.png");
+}
+
+#creativecommons-text {
+	background-image: url(about-text-bg.png);
+	font-size: 30px;
+	padding: 15px 40px 14px 40px;
 	margin-bottom: 40px;
 }
 
