@@ -4,7 +4,7 @@ html {
 	font-family: Kefa, Georgia;
 	margin: 0 0 0 0;
 	background-color: #000;
-	background-image: url(clouds.jpg);
+	background-image: url(bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -208,30 +208,6 @@ li {
 	background-image: url("Games Image.jpg");
 }
 
-#photographs {
-	background-image: url("Photographs Image.jpg");
-}
-
-#music {
-	background-image: url("Music Image.jpg");
-}
-
-#ideas {
-	background-image: url("Ideas Image.jpg");
-}
-
-#comedy {
-	background-image: url("Comedy Image.jpg");
-}
-
-#photographs .header {
-	padding: 230px 40px 10px 40px;
-}
-
-#photographs .description {
-	padding: 0px 40px 230px 40px;
-}
-
 #stories .header {
 	padding: 450px 100px 10px 100px;
 }
@@ -246,12 +222,4 @@ li {
 
 #games .description {
 	padding: 0 100px 370px 800px;
-}
-
-#ideas .header {
-	padding: 300px 300px 10px 700px;
-}
-
-#ideas .description {
-	padding: 0 300px 300px 700px;
 }
