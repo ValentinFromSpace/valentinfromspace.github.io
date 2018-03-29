@@ -200,7 +200,7 @@ li {
 #stories {
 	display: flex;
 	background-image: url("StoriesImage.jpg");
-	margin: 1450px auto 0 auto;
+	margin: 81px auto 0 auto;
 	align-self: flex-end; 
 }
 
