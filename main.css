@@ -112,6 +112,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	font-style: normal;
+	padding: 1px 1px 1px 1px;
 	margin: 0 auto 0 100px;
 }
 
@@ -157,11 +158,12 @@ li {
 	text-decoration: none;
 	padding: 300px 100px 0px 100px;
 	text-shadow: 0 0 50px #000;
+	font-size: 164px;
 }
 
 .description:hover {
 	color: #FFFFFF;
-	font-size: 60px;
+	font-size: 70px;
 	text-decoration: none;
 	padding: 0px 100px 300px 100px;
 	text-shadow: 0 0 50px #000;
@@ -171,6 +173,7 @@ li {
 	display: flex;
 	width: 1650px;
 	background-repeat: no-repeat;
+	background-position: center;
 	z-index: 1;
 	position: relative;
 	margin: 0 auto 0 auto;
@@ -185,11 +188,12 @@ li {
 .big-link:hover {
 	display: flex;
 	width: 1650px;
-	box-shadow: 0 0 50px #000;
 	background-repeat: no-repeat;
+	background-position: center;
 	z-index: 2;
 	position: relative;
 	margin: 0 auto 0 auto;
+	padding: 20px 20px 20px 20px;
 }
 
 .line {
