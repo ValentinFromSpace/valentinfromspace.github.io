@@ -1,0 +1,28 @@
+html {
+	background-color: #000;
+	font-family: Gill Sans;
+}
+
+body {
+	text-align: center;
+	left: 50%;
+	right: 50%;
+}
+
+a {
+	color: #FFF;
+}
+
+#subheading {
+	font-size: 30%;
+}
+
+.pics {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100px;
+	height: 100px;
+}

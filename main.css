@@ -8,7 +8,7 @@ html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: top center left;
+	background-position: top;
 }
 
 body {
@@ -163,7 +163,7 @@ li {
 
 .description:hover {
 	color: #FFFFFF;
-	font-size: 70px;
+	font-size: 60px;
 	text-decoration: none;
 	padding: 0px 100px 300px 100px;
 	text-shadow: 0 0 50px #000;
