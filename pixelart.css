@@ -1,16 +1,11 @@
 html {
 	background-color: #000;
 	font-family: Gill Sans;
+	color: #FFF;
 }
 
 body {
 	text-align: center;
-	left: 50%;
-	right: 50%;
-}
-
-a {
-	color: #FFF;
 }
 
 #subheading {

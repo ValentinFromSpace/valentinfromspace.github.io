@@ -1,0 +1,19 @@
+html {
+	background-color: #000;
+	font-family: Gill Sans;
+  color: #FFF;
+}
+
+body {
+	text-align: center;
+}
+
+#subheading {
+	font-size: 30%;
+}
+
+story {
+  width: 512px;
+  margin-top: 50px;
+  font-size: 10px;
+}
