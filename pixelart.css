@@ -8,16 +8,25 @@ body {
 	text-align: center;
 }
 
-#subheading {
-	font-size: 30%;
+h1 {
+	font-size: 40px;
+	margin-right: 10px;
+	font-weight: normal;
+	display: inline;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	display: inline;
 }
 
 .pics {
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
+	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 100px;
-	height: 100px;
+	width: 512px;
+	height: 512px;
 }
