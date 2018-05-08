@@ -11,13 +11,19 @@ body {
   width: 30em;
 }
 
+header {
+  text-align: center;
+}
+
 h1 {
   font-weight: normal;
+  text-align: center;
   display: inline;
 }
 
-header h1 {
-  font-size: 
+article h1 {
+  margin-right: auto;
+  margin-left: auto; 
 }
 
 header p {
