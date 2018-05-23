@@ -38,6 +38,7 @@ h2 {
 	margin-left: auto;
 	width: 312px;
 	height: 312px;
+	border-radius: 2em;
 
 	-webkit-transition: all 0.5s ease;
  	   -moz-transition: all 0.5s ease;
@@ -47,8 +48,10 @@ h2 {
 }
 
 .pics:hover {
-	width: 512px;
-	height: 512px;
+	widtdrh: 412px;
+	heidght: 412px;
+	border-radius: 0em;
+
 
 	-webkit-transition: all 0.5s ease;
  	   -moz-transition: all 0.5s ease;
