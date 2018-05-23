@@ -2,6 +2,8 @@ html {
 	background-color: #000;
 	font-family: Gill Sans;
 	color: #FFF;
+	margin-top: 20px;
+	padding-bottom: 512px;
 }
 
 body {
@@ -10,7 +12,7 @@ body {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 50px;
 	margin-top: 20px;
 	margin-right: 10px;
 	font-weight: normal;
@@ -23,12 +25,41 @@ h2 {
 	display: inline;
 }
 
+#content {
+	display: flex;
+	flex-direction: column;
+}
+
 .pics {
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 312px;
 	height: 312px;
+
+	-webkit-transition: all 0.5s ease;
+ 	   -moz-transition: all 0.5s ease;
+  	   -o-transition: all 0.5s ease;
+  	  -ms-transition: all 0.5s ease;
+     	    transition: all 0.5s ease;
+}
+
+.pics:hover {
+	width: 512px;
+	height: 512px;
+
+	-webkit-transition: all 0.5s ease;
+ 	   -moz-transition: all 0.5s ease;
+  	   -o-transition: all 0.5s ease;
+  	  -ms-transition: all 0.5s ease;
+     	    transition: all 0.5s ease;
+}
+
+.titles {
+	margin-top: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFF;
 }
