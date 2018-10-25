@@ -1,0 +1,74 @@
+html {
+	background-color: #000;
+	font-family: Gill Sans;
+	color: #FFF;
+	margin-top: 20px;
+	padding-bottom: 512px;
+}
+
+body {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+h1 {
+	font-size: 50px;
+	margin-top: 20px;
+	margin-right: 10px;
+	font-weight: normal;
+	display: inline;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	display: inline;
+}
+
+h3 {
+	font-size: 17px;
+	margin-top: 5px;
+	font-weight: lighter;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+}
+
+.pics {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 312px;
+	height: 312px;
+	border-radius: 2em;
+
+	-webkit-transition: all 0.5s ease-out;
+ 	   -moz-transition: all 0.5s ease-out;
+  	   -o-transition: all 0.5s ease-out;
+  	  -ms-transition: all 0.5s ease-out;
+     	    transition: all 0.5s ease-out;
+}
+
+.pics:hover {
+	widtdrh: 412px;
+	heidght: 412px;
+	border-radius: 0em;
+
+
+	-webkit-transition: all 0.5s ease;
+ 	   -moz-transition: all 0.5s ease;
+  	   -o-transition: all 0.5s ease;
+  	  -ms-transition: all 0.5s ease;
+     	    transition: all 0.5s ease;
+}
+
+.titles {
+	margin-top: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFF;
+}
