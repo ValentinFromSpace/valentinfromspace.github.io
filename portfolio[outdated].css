@@ -1,0 +1,76 @@
+html {
+  font-family: "Iowan Old Style";
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: #FFF;
+  background-color: #313131;
+}
+
+body {
+
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  -webkit-user-select: none;
+  align-items: baseline;
+  list-style: none;
+}
+
+li#logo {
+  font-size: 30px;
+  font-weight: 999;
+  margin: 0 auto 0 0;
+  padding: 0 25px 0 0;
+}
+
+li.tab {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+li.tab:after {
+  margin: 0 25px 0 25px;
+  content: "|";
+}
+
+li.tab:last-child:after {
+  content: "";
+}
+
+h2 {
+  color: #313131;
+  background-color: #FFF;
+  margin: 70px 0 0 0;
+  font-weight: 700;
+  font-size: 25px;
+  font-weight: 850;
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+p {
+  display: block;
+  width: 700px;
+  margin: 15px auto 0 auto;
+  text-align: center;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: #FFF;
+}
+
+img {
+  display: block;
+  margin: 25px auto 25px auto;
+  -webkit-user-select: none;
+}
+
+::selection {
+    color: #FFF;
+    background: #313131;
+}
