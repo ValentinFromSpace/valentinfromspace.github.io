@@ -42,7 +42,7 @@ li.tab:last-child:after {
 h2 {
   /*color: #FFF;
   background-color: #313131;*/
-  color: #000;
+  color: #313131;
   background-color: #FFF;
   margin: 70px 40px 35px;
   font-size: 150%;
@@ -50,27 +50,42 @@ h2 {
   text-align: center;
 }
 
+h2#article-header {
+  margin: 70px 40px 0px;
+}
+
 h3 {
-  color: #000;
+  color: #313131;
   margin: 45px 40px 5px;
   font-size: 100%;
   font-weight: 900;
   text-align: center;
 }
 
+h3#news {
+  font-size: 70%;
+  font-weight: 900;
+}
+
+h3#date {
+  font-size: 70%;
+  font-weight: 100;
+  margin: 5px auto 40px auto;
+}
+
 h4.news-article {
   color: #FFF;
   background-color: #313131;
-  margin: 45px 170px 5px;
+  margin: 5px 170px 5px;
   font-size: 110%;
   font-weight: 750;
   text-align: center;
 }
 
 h4.news-artwork {
-  color: #000;
+  color: #313131;
   background-color: #FFF;
-  margin: 45px 170px 5px;
+  margin: 5px 170px 5px;
   font-size: 110%;
   font-weight: 750;
   text-align: center;
@@ -78,8 +93,9 @@ h4.news-artwork {
 
 p {
   font-size: 95%;
+  color: #313131;
   display: block;
-  margin: auto 10% auto 10%;
+  margin: auto 20% auto 20%;
   text-align: center;
 }
 
@@ -102,7 +118,7 @@ a.news-articles {
 }
 
 a.news-artwork {
-  color: #000;
+  color: #313131;
 }
 
 img {
@@ -114,6 +130,14 @@ img {
 img.portfolio {
   display: block;
   margin: 15px auto 60px auto;
+  width: 90%;
+  -webkit-user-select: none;
+}
+
+img.textures {
+  display: block;
+  margin: 50px auto 60px auto;
+  width: 50%;
   -webkit-user-select: none;
 }
 
