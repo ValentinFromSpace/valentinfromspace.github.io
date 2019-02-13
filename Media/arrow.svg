@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1065px" height="53px" viewBox="0 0 1065 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="166.426691%" y1="50.1634787%" x2="-98.522562%" y2="49.8169095%" id="linearGradient-1">
+            <stop stop-color="#FFA135" offset="0%"></stop>
+            <stop stop-color="#E91CA1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Stories-|-Light" transform="translate(0.000000, -684.000000)" fill="url(#linearGradient-1)">
+            <path d="M1012,705 L1012,694.18034 C1012,688.657492 1016.47715,684.18034 1022,684.18034 C1023.55245,684.18034 1025.08358,684.541791 1026.47214,685.236068 L1059.11146,701.555728 C1064.05124,704.025621 1066.05348,710.032351 1063.58359,714.972136 C1062.61596,716.90741 1061.04673,718.476635 1059.11146,719.444272 L1026.47214,735.763932 C1021.53235,738.233825 1015.52562,736.231581 1013.05573,731.291796 C1012.36145,729.903242 1012,728.372111 1012,726.81966 L1012,716 L-74,716 L-74,705 L1012,705 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
