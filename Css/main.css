@@ -45,10 +45,11 @@ a#logo {
 a {
   color: rgba(7, 7, 7, 0.5);
   text-decoration: none;
-  /*border-style: solid;
-  border-width: 0 0 3px 0;
+  border-style: solid;
+  border-width: 0 0 0 0;
   -webkit-border-image:
-    -webkit-linear-gradient(left, rgba(255, 52, 111, 0.0), rgba(255, 116, 62, 0.0)) 100% 1;*/
+    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
+  transition: all 0.2s ease;
 }
 
 a:hover {
@@ -64,3 +65,63 @@ a:hover {
     #FF346F
     #FF743E
 */
+
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 20px 0 0 5vw;
+
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: capitalize;
+  margin: 20px 0 0 5vw;
+
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 20px 0 0 5vw;
+
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 20px 0 0 5vw;
+
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: lowercase;
+  margin: 20px 0 0 5vw;
+
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: lowercase;
+  margin: 20px 0 0 5vw;
+
+}
+
+p {
+  font-weight: 500;
+  text-align: left;
+  margin: 20px 0 0 5vw;
+
+}
+
+::selection {
+    color: #FFF;
+    background: #313131;
+}
