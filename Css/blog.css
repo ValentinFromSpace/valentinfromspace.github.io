@@ -1,0 +1,9 @@
+div.header {
+  display: flex;
+  flex-direction: row;
+}
+
+h4 {
+  margin: 29px 15vw 0 auto;
+  opacity: 0.5;
+}

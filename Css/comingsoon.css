@@ -1,10 +1,11 @@
-h1 {
+h1.comingsoon {
   font-weight: 900;
   font-size: 5vw;
   margin: 20vh 0 0 5vw;
+  text-transform: capitalize;
 }
 
-img {
+img.comingsoon {
   width: 70vw;
   height: auto;
 }
