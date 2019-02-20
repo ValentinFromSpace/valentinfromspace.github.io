@@ -1,0 +1,10 @@
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5vw 0 5vw;
+}
+
+img {
+  margin: 50px 50px 50px 0px;
+}
