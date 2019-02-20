@@ -25,7 +25,9 @@ h4 {
 }
 
 img {
-  width: 200px;
+  width: 20vw;
   height: auto;
+  max-width: 300px;
+  min-width: 150px;
   margin: 20px 20px 20px 0px;
 }
