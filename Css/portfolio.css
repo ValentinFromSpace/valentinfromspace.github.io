@@ -6,5 +6,9 @@ section {
 }
 
 img {
-  margin: 50px 50px 50px 0px;
+  width: 20vw;
+  height: auto;
+  max-width: 300px;
+  min-width: 150px;
+  margin: 20px 20px 20px 0px;
 }
