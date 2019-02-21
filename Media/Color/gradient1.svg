@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
-    <title>Rectangle</title>
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>gradient 1</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="166.426691%" y1="126.485376%" x2="-98.522562%" y2="-35.6609916%" id="linearGradient-1">
@@ -14,7 +14,7 @@
             <g id="Color-Resources" transform="translate(138.000000, 102.000000)">
                 <g id="Gradients" transform="translate(0.000000, 108.000000)">
                     <g id="Gradient-1">
-                        <rect id="Rectangle" x="0" y="0" width="350" height="350" rx="60"></rect>
+                        <rect id="gradient-1" x="0" y="0" width="350" height="350" rx="60"></rect>
                     </g>
                 </g>
             </g>
