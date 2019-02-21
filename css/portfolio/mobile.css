@@ -1,0 +1,14 @@
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5vw 0 5vw;
+}
+
+img {
+  width: 20vw;
+  height: auto;
+  max-width: 300px;
+  min-width: 150px;
+  margin: 20px 20px 20px 0px;
+}

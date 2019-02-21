@@ -1,0 +1,151 @@
+html {
+  font-family: "Avenir Next";
+  color: #313131;
+  /*background-image: url(../Media/black.jpg);
+  background-attachment: fixed;*/
+}
+
+body {
+  margin: 0 0 0 0;
+  background-color: #fff;
+  border-radius: 25px;
+  padding-bottom: 100px;
+}
+
+nav {
+  padding-top: 25px;
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+ul {
+  display: inline;
+  padding: 0 0 0 0;
+}
+
+li {
+  display: inline;
+  margin: 0 25px 0 0;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+li:last-child {
+  margin: 0 0px 0 0;
+}
+
+#logo {
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0 0 0 1px;
+  background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+  color: rgba(7, 7, 7, 0.5);
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  -webkit-border-image:
+    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: rgba(7, 7, 7, 1);
+  border-style: solid;
+  border-width: 10px 0 0 0;
+  -webkit-border-image:
+    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
+  transition: all 0.4s ease;
+}
+
+a#logo:hover {
+  color: rgba(7, 7, 7, 1);
+  border-style: solid;
+  border-width: 0 0 0 0;
+  -webkit-border-image:
+    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
+  transition: all 0.4s ease;
+}
+
+/* Gradient:
+    #FF346F
+    #FF743E
+*/
+
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 50px 0 0 5vw;
+
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: capitalize;
+  margin: 20px 0 0 5vw;
+
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 20px 0 0 5vw;
+
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 20px 0 0 5vw;
+
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: lowercase;
+  margin: 20px 0 0 5vw;
+
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: lowercase;
+  margin: 20px 0 0 5vw;
+
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  margin: 10px 10vw 10px 0;
+
+}
+
+cite {
+  font-size: 35px;
+  font-family: "Big Caslon", serif;
+  font-style: normal;
+  margin: 20px 0 20px 0;
+}
+
+img {
+    pointer-events: none;
+    -webkit-user-select: none;
+}
+
+::selection {
+    /*color: #FF346F;
+    background: rgba(255, 62, 111, 0.2);*/
+    background: rgba(255, 116, 62, 0.2);
+}

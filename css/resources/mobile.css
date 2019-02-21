@@ -1,0 +1,45 @@
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5vw 0 5vw;
+}
+
+div.gradient {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 0;
+  width: 25vw;
+  max-width: 400px;
+  height: auto;
+}
+
+div.color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25vw;
+  max-width: 400px;
+  height: auto;
+  margin: 1vw 0 0 0;
+}
+
+img.gradient {
+  width: 25vw;
+  max-width: 400px;
+  height: auto;
+}
+
+img.square {
+  width: 11vw;
+  height: auto;
+}
+
+img.third {
+  width: 7.4vw;
+  height: auto;
+}
+
+h1.needsMargin {
+  margin: 75px 0 0 5vw;
+}
