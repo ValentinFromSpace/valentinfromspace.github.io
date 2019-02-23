@@ -34,6 +34,13 @@ div.image {
   flex-direction: column;
 }
 
+div.image-secondary {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  margin: auto;
+}
+
 h2 {
   display: flex;
   margin: 0 0 0 0;
