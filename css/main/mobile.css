@@ -9,13 +9,12 @@ body {
   margin: 0 0 0 0;
   background-color: #fff;
   border-radius: 25px;
-  padding-bottom: 100px;
 }
 
 nav {
-  padding-top: 25px;
   text-align: center;
   -webkit-user-select: none;
+  margin-top: 20px;
 }
 
 ul {
@@ -23,20 +22,13 @@ ul {
   padding: 0 0 0 0;
 }
 
-li {
-  display: inline;
-  margin: 0 25px 0 0;
-  font-weight: bold;
-  font-size: 90%;
-}
-
-li:last-child {
-  margin: 0 0px 0 0;
+li.tab {
+  display: none;
 }
 
 #logo {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 30px;
   padding: 0 0 0 1px;
   background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
     -webkit-background-clip: text;
@@ -46,35 +38,7 @@ li:last-child {
 a {
   color: rgba(7, 7, 7, 0.5);
   text-decoration: none;
-  border-style: solid;
-  border-width: 0 0 0 0;
-  -webkit-border-image:
-    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
-  transition: all 0.2s ease;
 }
-
-a:hover {
-  color: rgba(7, 7, 7, 1);
-  border-style: solid;
-  border-width: 10px 0 0 0;
-  -webkit-border-image:
-    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
-  transition: all 0.4s ease;
-}
-
-a#logo:hover {
-  color: rgba(7, 7, 7, 1);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  -webkit-border-image:
-    -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
-  transition: all 0.4s ease;
-}
-
-/* Gradient:
-    #FF346F
-    #FF743E
-*/
 
 h1 {
   font-weight: 900;
