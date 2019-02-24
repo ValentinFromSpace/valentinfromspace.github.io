@@ -5,10 +5,35 @@ section {
   margin: 0 5vw 0 5vw;
 }
 
+div.content {
+  margin-top: 10px;
+}
+
 img {
   width: 20vw;
   height: auto;
   max-width: 300px;
   min-width: 150px;
   margin: 20px 20px 20px 0px;
+}
+
+@media only screen and (max-width: 414px) {
+  img {
+    min-width: 170px;
+    margin: 0 10px 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  img {
+    min-width: 150px;
+    margin: 0 10px 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  img {
+    min-width: 130px;
+    margin: 0 10px 10px 0px;
+  }
 }

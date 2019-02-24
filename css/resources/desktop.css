@@ -35,11 +35,7 @@ img.square {
   height: auto;
 }
 
-img.third {
+img.thirds {
   width: 7.4vw;
   height: auto;
-}
-
-h1.needsMargin {
-  margin: 75px 0 0 5vw;
 }

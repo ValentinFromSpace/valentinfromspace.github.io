@@ -9,12 +9,13 @@ body {
   margin: 0 0 0 0;
   background-color: #fff;
   border-radius: 25px;
+  padding-bottom: 100px;
 }
 
 nav {
+  margin-top: 20px;
   text-align: center;
   -webkit-user-select: none;
-  margin-top: 20px;
 }
 
 ul {
@@ -22,13 +23,20 @@ ul {
   padding: 0 0 0 0;
 }
 
-li.tab {
-  display: none;
+li {
+  display: inline;
+  margin: 0 10px 0 0;
+  font-weight: 500;
+  font-size: 90%;
+}
+
+li:last-child {
+  margin: 0;
 }
 
 #logo {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 20px;
   padding: 0 0 0 1px;
   background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
     -webkit-background-clip: text;
@@ -42,15 +50,15 @@ a {
 
 h1 {
   font-weight: 900;
-  font-size: 50px;
+  font-size: 37px;
   text-transform: uppercase;
-  margin: 50px 0 0 5vw;
+  margin: 30px 0 0 5vw;
 
 }
 
 h2 {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   text-transform: capitalize;
   margin: 20px 0 0 5vw;
 
@@ -74,7 +82,7 @@ h4 {
 
 h5 {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: lowercase;
   margin: 20px 0 0 5vw;
 
@@ -82,7 +90,7 @@ h5 {
 
 h6 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: lowercase;
   margin: 20px 0 0 5vw;
 
@@ -90,10 +98,10 @@ h6 {
 
 p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   text-align: left;
-  margin: 10px 10vw 10px 0;
-
+  margin: 2px 10vw 10px 0;
+  opacity: .9;
 }
 
 cite {
