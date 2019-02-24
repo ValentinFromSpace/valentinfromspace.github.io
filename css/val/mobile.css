@@ -46,6 +46,7 @@ p {
 img {
   width: 97vw;
   height: auto;
+  overflow: hidden;
   object-fit: contain;
   align-self: flex-end;
 }
