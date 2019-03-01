@@ -1,3 +1,8 @@
+nav {
+  position: absolute;
+  width: 100vw;
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -11,4 +16,12 @@ img {
   max-width: 300px;
   min-width: 150px;
   margin: 20px 20px 20px 0px;
+}
+
+img.herogif {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto 0 auto;
 }
