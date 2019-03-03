@@ -42,6 +42,10 @@ li:last-child {
     -webkit-text-fill-color: transparent;
 }
 
+li#contact {
+  display: none;
+}
+
 a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;

@@ -43,6 +43,23 @@ li:last-child {
     -webkit-text-fill-color: transparent;
 }
 
+li#contact {
+  position: fixed;
+  right: 5vw;
+  bottom: 20px;
+  background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
+  padding: 7px 12px;
+  border-radius: 15px;
+  z-index: 1;
+
+  transition: all 0.4s ease;
+}
+
+a#contact {
+  color: rgba(255, 255, 255, 1.5);
+  font-weight: 600;
+}
+
 a {
   color: rgba(7, 7, 7, 0.5);
   text-decoration: none;
