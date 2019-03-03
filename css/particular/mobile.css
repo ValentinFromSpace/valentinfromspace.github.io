@@ -1,0 +1,47 @@
+div.main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+div.text {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 10vh 0 0 8vw;
+  align-items: flex-start;
+}
+
+div.image {
+  position: absolute;
+  width: 100vw;
+  align-self: flex-end;
+  overflow: hidden;
+}
+
+h1 {
+  color: #F46C6A;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  max-width: 400px;
+  opacity: 0.75;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  right: -380px;
+  width: auto;
+  height: 100vh;
+  min-height: 850px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 370px) {
+  img {
+    right: -455px;
+  }
+}

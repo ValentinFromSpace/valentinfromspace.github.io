@@ -1,20 +1,15 @@
 html {
   font-family: "Avenir Next";
   color: #313131;
-  /*background-image: url(../Media/black.jpg);
-  background-attachment: fixed;*/
 }
 
 body {
   margin: 0 0 0 0;
-  background-color: #fff;
-  border-radius: 25px;
   margin: 0 auto 100px auto;
-  max-width: 2000px;
 }
 
 nav {
-  padding-top: 25px;
+  margin-top: 25px;
   text-align: center;
   -webkit-user-select: none;
 }
@@ -148,5 +143,4 @@ img {
 ::selection {
     /*color: #FF346F;
     background: rgba(255, 62, 111, 0.2);*/
-    background: rgba(255, 116, 62, 0.2);
 }

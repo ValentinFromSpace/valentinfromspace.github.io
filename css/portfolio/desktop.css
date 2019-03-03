@@ -1,13 +1,13 @@
-nav {
-  position: absolute;
-  width: 100vw;
-}
-
 section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 5vw 0 5vw;
+}
+
+nav {
+  position: absolute;
+  width: 100vw;
 }
 
 img {
@@ -21,7 +21,7 @@ img {
 img.herogif {
   display: block;
   width: 100%;
-  max-width: none;
+  max-width: 1800px;
   height: auto;
   margin: 0 auto 0 auto;
 }
