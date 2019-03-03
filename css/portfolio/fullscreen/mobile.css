@@ -1,0 +1,35 @@
+nav {
+  display: none;
+}
+
+div.content {
+  margin: 5vh 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 10px;
+
+  align-self: center;
+
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 75vh;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+}
+
+a:hover {
+  border: none;
+}

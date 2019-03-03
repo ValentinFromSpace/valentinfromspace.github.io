@@ -11,7 +11,18 @@ nav {
 }
 
 div.content {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+a.content {
+  display: flex;
+  flex-direction: column;
+}
+
+a.content:hover {
+  border: none;
 }
 
 img {

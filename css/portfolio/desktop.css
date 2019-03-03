@@ -14,6 +14,21 @@ li#contact {
   top: 0px;
 }
 
+div.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+a.content {
+  display: flex;
+  flex-direction: column;
+}
+
+a.content:hover {
+  border: none;
+}
+
 img {
   width: 20vw;
   height: auto;
