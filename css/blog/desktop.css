@@ -29,6 +29,10 @@ h5 {
   margin: 30px 0 30px 0;
 }
 
+a.content:hover {
+  border: none;
+}
+
 img {
   width: 20vw;
   height: auto;
