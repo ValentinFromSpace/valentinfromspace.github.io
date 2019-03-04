@@ -20,9 +20,26 @@ div.content {
   flex-wrap: wrap;
 }
 
+div.description {
+  margin: 20px auto 0 5px;
+  max-width: 300px;
+  width: 20vw;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0 40px 0 0;
+}
+
 a.content {
   display: flex;
   flex-direction: column;
+  color: #313131;
+
+  margin: 20px 20px 20px 0px;
 }
 
 a.content:hover {
@@ -34,7 +51,8 @@ img {
   height: auto;
   max-width: 300px;
   min-width: 150px;
-  margin: 20px 20px 20px 0px;
+
+  border-radius: 39px;
 }
 
 img.herogif {
@@ -43,4 +61,6 @@ img.herogif {
   max-width: 1800px;
   height: auto;
   margin: 0 auto 0 auto;
+
+  border-radius: 0px;
 }
