@@ -10,62 +10,13 @@ nav {
   width: 100vw;
 }
 
+video {
+  width: 100vw;
+  height: auto;
+}
+
 h3 {
   color: #313131;
   margin: 0 0 0 5px;
-  max-width: 170px;
-}
-
-div.content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-a.content {
-  display: flex;
-  flex-direction: column;
-
-  margin-top: 20px;
-}
-
-a.content:hover {
-  border: none;
-}
-
-img {
-  width: 20vw;
-  height: auto;
-  max-width: 300px;
-  min-width: 150px;
-  margin: 20px 20px 20px 0px;
-}
-
-img.herogif {
-  display: block;
-  width: 100%;
-  max-width: none;
-  height: auto;
-  margin: 0 auto 0 auto;
-}
-
-@media only screen and (max-width: 414px) {
-  img {
-    min-width: 170px;
-    margin: 0 10px 10px 0px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  img {
-    min-width: 150px;
-    margin: 0 10px 10px 0px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  img {
-    min-width: 130px;
-    margin: 0 10px 10px 0px;
-  }
+  width: 70vw;
 }

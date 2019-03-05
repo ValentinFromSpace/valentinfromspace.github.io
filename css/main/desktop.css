@@ -8,6 +8,10 @@ body {
   margin: 0 auto 0 auto;
 }
 
+
+
+/* ----------------------NAVBAR:START---------------------- */
+
 nav {
   margin-top: 25px;
   text-align: center;
@@ -94,10 +98,11 @@ a#logo:hover {
   transition: all 0.4s ease;
 }
 
-/* Gradient:
-    #FF346F
-    #FF743E
-*/
+/* ----------------------NAVBAR:END---------------------- */
+
+
+
+/* ----------------------TYPOGRAPHY:START---------------------- */
 
 h1 {
   font-weight: 900;
@@ -162,23 +167,83 @@ cite {
   margin: 20px 0 20px 0;
 }
 
+/* ----------------------TYPOGRAPHY:END---------------------- */
+
+
+
+/* ----------------------MEDIA:START---------------------- */
+
 img {
     pointer-events: none;
     -webkit-user-select: none;
 }
 
-::selection {
-    /*color: #FF346F;
-    background: rgba(255, 62, 111, 0.2);*/
+video {
+  pointer-events: none;
+  -webkit-user-select: none;
 }
 
-/*MAILCHIMP*/
+/* ----------------------MEDIA:END---------------------- */
 
-    footer {
-      width: 100vw;
-      margin: 100px 0 0 0;
-      background-color: #313131;
-    }
+
+
+/* ----------------------WRAPPER:START---------------------- */
+
+div.flex-row-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.flex-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* ----------------------WRAPPER:END---------------------- */
+
+
+
+/* ----------------------PREVIEW-ITEMS:START---------------------- */
+
+div.description {
+  margin: 30px auto 0 5px;
+  max-width: 300px;
+  width: 20vw;
+}
+a.preview {
+  display: flex;
+  flex-direction: column;
+  color: #313131;
+
+  padding: 15px 11px 20px 11px;
+  border-radius: 15px;
+}
+
+a.preview:hover {
+  border: none;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------PREVIEW-ITEMS:END---------------------- */
+
+
+
+/* ----------------------FOOTER:START---------------------- */
+
+footer {
+  width: 100vw;
+  margin: 100px 0 0 0;
+  background-color: #313131;
+}
+
+/* ----------------------FOOTER:END---------------------- */
+
+
+
+/* ----------------------NEWSLETTER-FORM:START---------------------- */
 
     div.mailchimp {
       width: 50vw;
@@ -191,3 +256,5 @@ img {
       background-color: #313131;
       color: #FFF;
     }
+
+/* ----------------------NEWSLETTER-FORM:END---------------------- */

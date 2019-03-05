@@ -28,11 +28,11 @@ h2 {
 p {
   text-align: center;
   margin: 5px auto;
-  max-width: 50vw;
 }
 
 p.text {
   text-align: left;
+  max-width: 70vw;
 }
 
 a:hover {

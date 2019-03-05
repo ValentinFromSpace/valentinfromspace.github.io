@@ -14,16 +14,9 @@ li#contact {
   top: 0px;
 }
 
-div.content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-div.description {
-  margin: 20px auto 0 5px;
-  max-width: 300px;
-  width: 20vw;
+video {
+  width: 100vw;
+  height: auto;
 }
 
 h3 {
@@ -34,18 +27,6 @@ p {
   margin: 0 40px 0 0;
 }
 
-a.content {
-  display: flex;
-  flex-direction: column;
-  color: #313131;
-
-  margin: 20px 20px 20px 0px;
-}
-
-a.content:hover {
-  border: none;
-}
-
 img {
   width: 20vw;
   height: auto;
@@ -53,14 +34,4 @@ img {
   min-width: 150px;
 
   border-radius: 39px;
-}
-
-img.herogif {
-  display: block;
-  width: 100%;
-  max-width: 1800px;
-  height: auto;
-  margin: 0 auto 0 auto;
-
-  border-radius: 0px;
 }
