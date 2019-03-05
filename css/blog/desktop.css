@@ -18,10 +18,8 @@ div.post-first {
   flex-wrap: wrap;
 }
 
-div.posters {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+div.flex-row-wrapper {
+  margin-top: 20px;
 }
 
 h1 {

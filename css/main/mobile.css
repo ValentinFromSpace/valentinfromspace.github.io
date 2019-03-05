@@ -169,7 +169,8 @@ div.flex-row-wrapper {
   flex-wrap: nowrap;
   overflow: scroll;
   scroll-snap-type: mandatory;
-
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 div.flex-column-wrapper {
@@ -177,6 +178,9 @@ div.flex-column-wrapper {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: scroll;
+  scroll-snap-type: mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 /* ----------------------WRAPPER:END---------------------- */
@@ -200,6 +204,7 @@ a.preview {
 
   padding: 15px 15px 20px 5px;
   border-radius: 15px;
+  -webkit-scroll-snap-coordinate: 0% 0%;
   scroll-snap-align: start;
 }
 
