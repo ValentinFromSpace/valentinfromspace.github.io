@@ -7,17 +7,45 @@ div.header {
 div.post {
   margin: 100px 5vw 0 5vw;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 div.post-first {
   margin: 0 5vw 0 5vw;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+div.posters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 h1 {
   margin: 20px 0 0 0;
+}
+
+div.description {
+  margin: 30px 0 0 5px;
+  max-width: 300px;
+  width: 80vw;
+}
+
+h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+p.description {
+  margin: 0 40px 0 0;
+  font-size: 20px;
+}
+
+a.content {
+  display: flex;
+  flex-direction: column;
+  color: #313131;
+
+  margin: 20px 20px 20px 0px;
 }
 
 h5 {
@@ -34,31 +62,8 @@ h5 {
 }
 
 img {
-  width: 20vw;
+  width: 70vw;
   height: auto;
-  max-width: 300px;
-  min-width: 150px;
   margin: 0 2vw 2vw 0px;
   pointer-events: visible;
-}
-
-@media only screen and (max-width: 414px) {
-  img {
-    min-width: 170px;
-    margin: 0 10px 10px 0px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  img {
-    min-width: 150px;
-    margin: 0 10px 10px 0px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  img {
-    min-width: 130px;
-    margin: 0 10px 10px 0px;
-  }
 }

@@ -10,6 +10,12 @@ nav {
   width: 100vw;
 }
 
+h3 {
+  color: #313131;
+  margin: 0 0 0 5px;
+  max-width: 170px;
+}
+
 div.content {
   display: flex;
   flex-direction: row;
@@ -19,6 +25,8 @@ div.content {
 a.content {
   display: flex;
   flex-direction: column;
+
+  margin-top: 20px;
 }
 
 a.content:hover {

@@ -1,4 +1,4 @@
-div {
+div.comingsoon {
   margin-top: 30vh;
 }
 
@@ -9,4 +9,8 @@ h1 {
 img.comingsoon {
   width: 90vw;
   height: auto;
+}
+
+footer {
+  margin-top: 200px;
 }
