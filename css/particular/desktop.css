@@ -43,3 +43,16 @@ img {
   min-height: 850px;
   z-index: -1;
 }
+
+footer {
+  margin-top: 50px;
+}
+
+
+div.newsletter-form {
+  margin: 0;
+}
+
+form#mc-embedded-subscribe-form.validate {
+  padding: 0;
+}
