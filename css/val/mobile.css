@@ -35,7 +35,7 @@ div.image-secondary.left {
   flex-direction: row;
 }
 
-h2 {
+h2.section-header {
   display: flex;
   margin: 30px 0 0 0;
   align-self: center;
