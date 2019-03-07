@@ -45,3 +45,16 @@ img {
     right: -455px;
   }
 }
+
+footer {
+  margin-top: 20px;
+}
+
+
+div.newsletter-form {
+  margin: 0;
+}
+
+form#mc-embedded-subscribe-form.validate {
+  padding: 0;
+}
