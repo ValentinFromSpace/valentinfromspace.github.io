@@ -48,7 +48,7 @@ li#contact {
   right: 70px;
   background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
   padding: 7px 12px;
-  border-radius: 15px;
+  border-radius: 30px;
   transition: all 0.4s ease;
 }
 

@@ -168,8 +168,15 @@ div.flex-row-wrapper {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow: scroll;
+
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
+
   -webkit-overflow-scrolling: touch;
+
+  -webkit-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
@@ -178,8 +185,15 @@ div.flex-column-wrapper {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: scroll;
+
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
+
   -webkit-overflow-scrolling: touch;
+
+  -webkit-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
@@ -217,7 +231,10 @@ a.preview {
 
   padding: 15px 25px 20px 5px;
   border-radius: 15px;
+
   -webkit-scroll-snap-coordinate: 0% 0%;
+  -ms-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-coordinate: 0% 0%;
   scroll-snap-align: start;
 }
 
