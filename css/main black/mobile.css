@@ -156,7 +156,9 @@ div.newsletter-form {
 
 
 div#mc_embed_signup {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px 20px;
   color: #FFF;
 }
 
