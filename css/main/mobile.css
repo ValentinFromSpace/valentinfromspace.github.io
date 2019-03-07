@@ -90,7 +90,6 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 30px;
-  text-transform: capitalize;
   margin: 20px 0 0 5vw;
 
 }
@@ -98,7 +97,6 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 22px;
-  text-transform: capitalize;
   margin: 20px 0 0 5vw;
 
 }
@@ -106,7 +104,6 @@ h3 {
 h4 {
   font-weight: 400;
   font-size: 22px;
-  text-transform: capitalize;
   margin: 20px 0 0 5vw;
 
 }
