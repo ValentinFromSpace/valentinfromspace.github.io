@@ -212,10 +212,11 @@ div.flex-column-wrapper {
 /* ----------------------PREVIEW-ITEMS:START---------------------- */
 
 div.description {
-  margin: 30px auto 0 5px;
+  margin: 30px 0 0 5px;
   max-width: 300px;
   width: 20vw;
 }
+
 a.preview {
   display: flex;
   flex-direction: column;
@@ -223,6 +224,10 @@ a.preview {
 
   padding: 15px 11px 20px 11px;
   border-radius: 15px;
+}
+
+p.description {
+  width: 90%;
 }
 
 a.preview:hover {

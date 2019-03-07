@@ -42,3 +42,7 @@ h5 {
 .posters {
   margin-top: 20px;
 }
+
+img {
+  border-radius: 40px;
+}
