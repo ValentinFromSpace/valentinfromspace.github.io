@@ -249,16 +249,16 @@ footer {
 
 /* ----------------------NEWSLETTER-FORM:START---------------------- */
 
-    div.newsletter-form {
-      width: 50vw;
-      margin: 0 0 0 25px;
-      padding: 30px 0;
+div.newsletter-form {
+  width: 50vw;
+  margin: 0 0 0 5vw;
+  padding: 30px 0;
 
-    }
+}
 
-    div#mc_embed_signup {
-      background-color: #313131;
-      color: #FFF;
-    }
+div#mc_embed_signup {
+  background-color: #313131;
+  color: #FFF;
+}
 
 /* ----------------------NEWSLETTER-FORM:END---------------------- */
