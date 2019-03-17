@@ -15,6 +15,10 @@ video {
   height: auto;
 }
 
+img {
+  border-radius: 39px;
+}
+
 h3 {
   color: #313131;
   margin: 0 0 0 5px;

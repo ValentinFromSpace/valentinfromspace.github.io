@@ -1,3 +1,9 @@
+div#body {
+  background-color: #FFF;
+  padding: 20px 0 50px 0;
+  margin-top: 60vh;
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -5,18 +11,14 @@ section {
   margin: 0 5vw 0 5vw;
 }
 
-nav {
-  position: absolute;
-  width: 100vw;
-}
-
-li#contact {
-  top: 0px;
-}
-
 video {
-  width: 100vw;
-  height: auto;
+  width: auto;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 642px;
+  position: fixed;
+  z-index: -100;
+  top: 0;
 }
 
 h3 {
@@ -34,4 +36,8 @@ img {
   min-width: 150px;
 
   border-radius: 39px;
+}
+
+footer {
+  margin-top: 0;
 }
