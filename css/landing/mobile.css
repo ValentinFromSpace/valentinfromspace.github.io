@@ -7,12 +7,7 @@ body {
 }
 
 div#body {
-  margin: 50px 5vw 0 5vw;
-}
-
-section {
-  max-width: 1300px;
-  margin: 0 auto;
+  margin: 0 5vw 0 5vw;
 }
 
 div.flex-row-wrapper {
@@ -21,34 +16,36 @@ div.flex-row-wrapper {
 
 div.card {
   background-color: #FFF;
+  margin-top: 30px;
   height: 500px;
-  border-radius: 65px;
+  border-radius: 50px;
   box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.2s ease;
-}
-
-div.card.link:hover {
-  margin: -5px 0 0 0;
-  transition: all 0.4s ease;
+  min-width: 90vw;
 }
 
 div.card-inset {
-  margin: 40px;
+  margin: 30px;
   margin-bottom: 0;
 }
 
-div.one {
+div.primary {
   width: 64%;
 }
 
-div.two {
+div.newsletter {
   width: 34%;
+  height: auto;
 }
 
-div.square {
+div.newsletter .card-inset {
+  margin-bottom: 30px;
+}
+
+div.secondary {
   width: 32%;
-  height: 350px;
+  height: 320px;
 }
 
 div.news-primary {
@@ -62,27 +59,28 @@ h1 {
 }
 
 h1.section {
-  margin: 70px 0 25px 0;
+  margin-top: 70px;
 }
 
 h2.square-card {
   margin: 2px 0 20px 0;
 }
 
-h1.news {
-  width: 50%;
-}
-
 h3 {
   margin: 30px 0 0 5vw;
 }
 
-p.news {
-  width: 50%;
+p.sub {
+  margin: 8px 0 0 0;
 }
 
 img {
-  width: 100%;
   height: auto;
+  margin-top: 10px;
+  width: 100%;
+  align-self: flex-end;
+}
 
+.primary img {
+  width: 110%;
 }

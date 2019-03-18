@@ -1,14 +1,13 @@
 html {
   font-family: "Avenir Next";
   color: #313131;
-  /*background-image: url(../Media/black.jpg);
-  background-attachment: fixed;*/
+  background-color: #F2F2F2;
 }
 
 body {
   margin: 0 0 0 0;
   background-color: #fff;
-  border-radius: 25px;
+  background-color: #F2F2F2;
   padding-bottom: 0;
 }
 
@@ -78,49 +77,52 @@ a {
 
 /* ----------------------TYPOGRAPHY:START---------------------- */
 
-
 h1 {
   font-weight: 900;
-  font-size: 37px;
+  font-size: 35px;
   text-transform: uppercase;
-  margin: 30px 0 0 5vw;
+  margin: 0;
+  line-height: 35px;
+  color: #000;
 
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 30px;
-  margin: 20px 0 0 5vw;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0;
 
 }
 
 h3 {
   font-weight: 700;
-  font-size: 22px;
-  margin: 20px 0 0 5vw;
+  font-size: 20px;
+  margin: 0;
 
 }
 
 h4 {
   font-weight: 400;
-  font-size: 22px;
-  margin: 20px 0 0 5vw;
+  font-size: 20px;
+  margin: 0;
 
 }
 
 h5 {
-  font-weight: 700;
-  font-size: 10px;
+  font-weight: 900;
+  font-size: 15px;
   text-transform: lowercase;
-  margin: 20px 0 0 5vw;
+  margin: 0;
+  opacity: 0.5;
 
 }
 
 h6 {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 16px;
   text-transform: lowercase;
-  margin: 20px 0 0 5vw;
+  margin: 0;
 
 }
 
@@ -131,19 +133,39 @@ em {
     -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
 }
 
+p.introduction {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+  opacity: 0.90;
+
+}
+
 p {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
   text-align: left;
-  margin: 2px 10vw 10px 0;
-  opacity: .9;
+  margin: 0;
+  opacity: 0.85;
+
+}
+
+p.sub {
+  font-weight: 400;
+  font-size: 11px;
+  text-align: left;
+  opacity: 0.5;
+  margin: 0;
+
 }
 
 cite {
   font-size: 35px;
   font-family: "Big Caslon", serif;
   font-style: normal;
-  margin: 20px 0 20px 0;
+  margin: 0;
+
 }
 
 /* ----------------------TYPOGRAPHY:END---------------------- */
@@ -157,6 +179,11 @@ img {
     -webkit-user-select: none;
 }
 
+video {
+  pointer-events: none;
+  -webkit-user-select: none;
+}
+
 /* ----------------------MEDIA:END---------------------- */
 
 
@@ -164,6 +191,18 @@ img {
 /* ----------------------WRAPPER:START---------------------- */
 
 div.flex-row-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.flex-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+div.flex-row-wrapper.scroll {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -180,7 +219,7 @@ div.flex-row-wrapper {
   scroll-behavior: smooth;
 }
 
-div.flex-column-wrapper {
+div.flex-column-wrapper.scroll {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -195,6 +234,12 @@ div.flex-column-wrapper {
   -webkit-scroll-behavior: smooth;
   -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
+}
+
+
+
+div.inline-wrapper {
+  display: inline;
 }
 
 /* ----------------------WRAPPER:END---------------------- */
@@ -245,9 +290,10 @@ a.preview {
 /* ----------------------FOOTER:START---------------------- */
 
 footer {
-  width: 100vw;
-  margin: 100px 0 0 0;
-  background-color: #313131;
+  margin: 100px 0;
+  padding: 40px;
+  background-color: #FFF;
+  box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* ----------------------FOOTER:END---------------------- */
@@ -257,14 +303,27 @@ footer {
 /* ----------------------NEWSLETTER-FORM:START---------------------- */
 
 div.newsletter-form {
-  width: 80vw;
-  margin: 0 0 0 5vw;
-  padding: 30px 0;
+  width: 100%;
+  padding: 0;
+
 }
 
 div#mc_embed_signup {
-  background-color: #313131;
-  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 /* ----------------------NEWSLETTER-FORM:END---------------------- */
+
+
+
+/* ----------------------OTHER-CLASSES:START---------------------- */
+
+.placeholder {
+  opacity: 0.0;
+}
+
+.hide {
+  display: none;
+}
+
+/* ----------------------OTHER-CLASSES:END---------------------- */

@@ -15,12 +15,37 @@ video {
   height: auto;
 }
 
-img {
-  border-radius: 39px;
+
+h1 {
+  margin: 20px 0;
+  height: 30px;
+}
+
+h1.illustrations {
+  position: absolute;
 }
 
 h3 {
-  color: #313131;
-  margin: 0 0 0 5px;
-  width: 70vw;
+  margin: 0;
+}
+
+p {
+  margin: 0 40px 0 0;
+}
+
+img {
+  width: 20vw;
+  height: auto;
+  max-width: 300px;
+  min-width: 150px;
+
+  border-radius: 39px;
+}
+
+a.illustrations {
+  margin-top: 70px;
+}
+
+div.flex-row-wrapper.scroll {
+  margin-right: -5vw;
 }
