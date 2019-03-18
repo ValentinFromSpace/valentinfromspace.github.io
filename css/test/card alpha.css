@@ -1,0 +1,88 @@
+html {
+  background-color: #F2F2F2;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+div#body {
+  margin: 50px 5vw 0 5vw;
+}
+
+section {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+div.flex-row-wrapper {
+  justify-content: space-between;
+}
+
+div.card {
+  background-color: #FFF;
+  height: 500px;
+  border-radius: 65px;
+  box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+div.card.link:hover {
+  margin: -5px 0 0 0;
+  transition: all 0.4s ease;
+}
+
+div.card-inset {
+  margin: 40px;
+  margin-bottom: 0;
+}
+
+div.one {
+  width: 64%;
+}
+
+div.two {
+  width: 34%;
+}
+
+div.square {
+  width: 32%;
+  height: 350px;
+}
+
+div.news-primary {
+  width: 100%;
+}
+
+h1 {
+  margin: 5px 0;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+h1.section {
+  margin: 70px 0 25px 0;
+}
+
+h2.square-card {
+  margin: 2px 0 20px 0;
+}
+
+h1.news {
+  width: 50%;
+}
+
+h3 {
+  margin: 30px 0 0 5vw;
+}
+
+p.news {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+}

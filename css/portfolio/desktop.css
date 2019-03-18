@@ -21,6 +21,15 @@ video {
   top: 0;
 }
 
+h1 {
+  margin: 20px 0;
+  height: 30px;
+}
+
+h1.illustrations {
+  position: absolute;
+}
+
 h3 {
   margin: 0;
 }
@@ -38,6 +47,6 @@ img {
   border-radius: 39px;
 }
 
-footer {
-  margin-top: 0;
+a.illustrations {
+  margin-top: 70px;
 }

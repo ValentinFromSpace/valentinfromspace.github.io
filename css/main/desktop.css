@@ -9,7 +9,6 @@ body {
 }
 
 
-
 /* ----------------------NAVBAR:START---------------------- */
 
 nav {
@@ -106,46 +105,50 @@ a#logo:hover {
 
 h1 {
   font-weight: 900;
-  font-size: 50px;
+  font-size: 40px;
   text-transform: uppercase;
-  margin: 50px 0 0 5vw;
+  margin: 0;
+  line-height: 40px;
+  color: #000;
 
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 35px;
-  margin: 20px 0 0 5vw;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
 
 }
 
 h3 {
   font-weight: 700;
   font-size: 20px;
-  margin: 20px 0 0 5vw;
+  margin: 0;
 
 }
 
 h4 {
   font-weight: 400;
   font-size: 20px;
-  margin: 20px 0 0 5vw;
+  margin: 0;
 
 }
 
 h5 {
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 900;
+  font-size: 15px;
   text-transform: lowercase;
-  margin: 20px 0 0 5vw;
+  margin: 0;
+  opacity: 0.5;
 
 }
 
 h6 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: lowercase;
-  margin: 20px 0 0 5vw;
+  margin: 0;
 
 }
 
@@ -156,11 +159,30 @@ em {
     -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
 }
 
-p {
+p.introduction {
   font-weight: 400;
   font-size: 18px;
   text-align: left;
-  margin: 10px 10vw 10px 0;
+  margin: 0;
+  opacity: 0.90;
+
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+  opacity: 0.85;
+
+}
+
+p.sub {
+  font-weight: 400;
+  font-size: 11px;
+  text-align: left;
+  opacity: 0.5;
+  margin: 0;
 
 }
 
@@ -168,7 +190,8 @@ cite {
   font-size: 35px;
   font-family: "Big Caslon", serif;
   font-style: normal;
-  margin: 20px 0 20px 0;
+  margin: 0;
+
 }
 
 /* ----------------------TYPOGRAPHY:END---------------------- */
@@ -203,6 +226,10 @@ div.flex-column-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+div.inline-wrapper {
+  display: inline;
 }
 
 /* ----------------------WRAPPER:END---------------------- */
@@ -243,9 +270,11 @@ a.preview:hover {
 /* ----------------------FOOTER:START---------------------- */
 
 footer {
-  width: 100vw;
-  margin: 100px 0 0 0;
-  background-color: #313131;
+  margin: 100px 50vw 100px 5vw;
+  padding: 40px;
+  background-color: #FFF;
+  border-radius: 65px;
+  box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* ----------------------FOOTER:END---------------------- */
@@ -255,15 +284,27 @@ footer {
 /* ----------------------NEWSLETTER-FORM:START---------------------- */
 
 div.newsletter-form {
-  width: 50vw;
-  margin: 0 0 0 5vw;
-  padding: 30px 0;
+  width: 100%;
+  padding: 10px 0 0 0;
 
 }
 
 div#mc_embed_signup {
-  background-color: #313131;
-  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 /* ----------------------NEWSLETTER-FORM:END---------------------- */
+
+
+
+/* ----------------------OTHER-CLASSES:START---------------------- */
+
+.placeholder {
+  opacity: 0.0;
+}
+
+.hide {
+  display: none;
+}
+
+/* ----------------------OTHER-CLASSES:END---------------------- */

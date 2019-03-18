@@ -45,6 +45,10 @@ div.image-secondary {
   margin: auto;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 h2.section-header {
   display: flex;
   margin: 0;

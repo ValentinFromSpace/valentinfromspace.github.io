@@ -7,6 +7,10 @@ img.comingsoon {
   height: auto;
 }
 
+h1 {
+  margin-left: 5vw;
+}
+
 footer {
   margin-top: 300px;
 }
