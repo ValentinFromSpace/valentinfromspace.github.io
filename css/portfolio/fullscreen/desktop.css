@@ -20,19 +20,20 @@ img {
   max-height: 70vh;
 }
 
-h2 {
+h3 {
   text-align: center;
   margin: 20px 0 0 0;
 }
 
 p {
   text-align: center;
-  margin: 5px auto;
-  max-width: 500px;
+  margin: 10px auto;
+  max-width: 300px;
 }
 
 p.text {
   text-align: left;
+  margin: 0 auto;
 }
 
 a:hover {

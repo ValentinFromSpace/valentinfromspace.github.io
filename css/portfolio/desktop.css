@@ -1,5 +1,5 @@
 div#body {
-  background-color: #FFF;
+  background-color: #F2F2F2;
   padding: 20px 0 50px 0;
   margin-top: 60vh;
 }
@@ -9,6 +9,10 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 5vw 0 5vw;
+}
+
+.flex-row-wrapper {
+  margin-left: -11px;
 }
 
 video {

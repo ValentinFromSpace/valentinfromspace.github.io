@@ -62,8 +62,16 @@ h1.section {
   margin-top: 70px;
 }
 
-h2.square-card {
-  margin: 2px 0 20px 0;
+div.card-square {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  height: 0;
+}
+
+div.card-inset.square {
+  position: absolute;
+  top: 0;
 }
 
 h3 {

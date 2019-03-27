@@ -134,7 +134,7 @@ img {
 footer {
   width: 100vw;
   margin: 100px 0 0 0;
-  background-color: rgba(0, 0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 /* ----------------------FOOTER:END---------------------- */
@@ -147,7 +147,7 @@ div.newsletter-form {
   width: 70vw;
   margin: 0 auto 0 25px;
   padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0.0);
 
 }
 

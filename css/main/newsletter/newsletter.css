@@ -64,7 +64,7 @@
 
 #mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0 .5em 0em 0; overflow:hidden; width:100%; clear: both;}
 #mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1;}
-#mc_embed_signup #mce-error-response {display:none; margin: 0;}
+#mc_embed_signup #mce-error-response {display:none; position: absolute; margin: 0;}
 #mc_embed_signup #mce-success-response {color:#313131; margin: 0; display:none;}
 #mc_embed_signup label.error {display:block; float:none; width:auto; text-align:left; padding:.5em 0;}
 a.newsletter:hover {border: none;}
