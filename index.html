@@ -5,9 +5,9 @@
     <title>Val</title>
     <link rel='stylesheet' media='(max-width: 414px)' href='css/main/light/mobile.css'>
     <link rel='stylesheet' media='(min-width: 415px)' href='css/main/light/desktop.css'>
-    <link rel='stylesheet' media='(max-width: 768px)' href='css/landing/mobile.css'>
-    <link rel='stylesheet' media='(min-width: 769px)' href='css/landing/desktop.css'>
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' media='(max-width: 768px)' href='css/home/mobile.css'>
+    <link rel='stylesheet' media='(min-width: 769px)' href='css/home/desktop.css'>
+    <link rel="icon" href="media/other/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <nav>
@@ -20,27 +20,26 @@
         <li id="contact"><a id="contact" href="mailto: valentinwalter@icloud.com">contact</a></li>
       </ul>
     </nav>
-    <h3 id="construction"><em>Under Construction</em></h3>
-    <div id="body">
+    <div class="margin">
       <section>
         <div class="flex-row-wrapper">
-          <div class="card link primary">
+          <a href="html/blog/#Epic Journey" class="card link primary">
             <div class="card-inset">
               <h5>movie list:</h5>
-              <div class="flex-row-wrapper">
-                <h1 class="welcome">Epic Journey</h1>
-                <p class="introduction welcome">Discover 13 movies that tell the struggle and reward of an epic journey.</p>
+              <div>
+                <h1>Epic Journey</h1>
+                <p class="introduction">Discover 13 movies that tell the struggle and reward of an epic journey.</p>
               </div>
-              </div>
-              <img src="media/landing/movies.png" alt="">
-          </div>
-          <div class="divider"></div>
-          <div class="card newsletter">
-            <div class="card-inset">
-              <h5 class="placeholder">Discover:</h5>
-              <h1>Subscribe</h1>
-              <p class="introduction">And be the first to find out about new developments.</p>
-              <div class="newsletter-form">
+            </div>
+            <img src="media/landing/movies.png" alt="">
+        </a>
+        <div class="divider"></div>
+        <div class="card newsletter">
+          <div class="card-inset">
+            <h5 class="placeholder">Discover:</h5>
+            <h1>Subscribe</h1>
+            <p class="introduction">And be the first to find out about new developments.</p>
+            <div class="newsletter-form">
                 <!-- Begin Mailchimp Signup Form -->
                 <link href="css/main/newsletter/newsletter.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
@@ -71,50 +70,54 @@
                 <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                 <!--End mc_embed_signup-->
               </div>
-              <p class="sub">E-Mails are infrequent.</p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section>
-      <h1 class="section">Discover</h1>
-      <div class="flex-row-wrapper">
-        <div class="card link card-square">
-          <div class="card-inset square">
-            <h5 class="square">Discover:</h5>
-            <h2 class="square">Resources</h2>
-            <img class="square" src="media/landing/resources.jpg">
-          </div>
-        </div>
-        <div class="card link card-square">
-          <div class="card-inset square">
-            <h5 class="square">Latest Portfolio Piece:</h5>
-            <h2 class="square">Sunwalk</h2>
-            <img class="square" src="media/landing/sunwalk.jpg">
-          </div>
-        </div>
-        <div class="card link card-square">
-          <div class="card-inset square">
-            <h5 class="square">Latest Blogpost:</h5>
-            <h2 class="square">Epic Journey</h2>
-            <img class="square" src="media/landing/movies small.jpg">
+            <p class="sub">E-Mails are infrequent.</p>
           </div>
         </div>
       </div>
     </section>
     <section>
+      <h1 class="section">Discover</h1>
+      <div class="flex-row-wrapper wrap square">
+        <a class="card link square" href="html/resources">
+          <div class="card-inset">
+            <h5>Discover:</h5>
+            <h2>Resources</h2>
+            <img src="media/landing/resources.jpg">
+          </div>
+        </a>
+        <a class="card link square" href="html/portfolio#3D">
+          <div class="card-inset">
+            <h5>Latest Portfolio Piece:</h5>
+            <h2>Sunwalk</h2>
+            <img src="media/landing/sunwalk.jpg">
+          </div>
+        </a>
+        <a class="card link square" href="html/blog#Epic Journey">
+          <div class="card-inset">
+            <div class="flex-wrapper">
+              <div>
+                <h5>Latest Blogpost:</h5>
+                <h2>Epic Journey</h2>
+              </div>
+              <img src="media/landing/movies small.jpg">
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section>
       <h1 class="section">News</h1>
       <div class="flex-row-wrapper">
-        <div class="card link news-primary">
+        <a class="card link news" href="html/blog">
           <div class="card-inset">
             <h5>17 March 2019:</h5>
             <div class="flex-row-wrapper">
-              <h1 class="news">Major Redesign</h1>
-              <p class="introduction news">Find out more about the fourth major redesign of valentinwalter.space.</p>
+              <h1>Major Redesign</h1>
+              <p class="introduction">Find out more about the fourth major redesign of valentinwalter.space.</p>
             </div>
             </div>
-            <img src="" alt="">
-        </div>
+            <img src="">
+        </a>
       </div>
     </section>
     </div>

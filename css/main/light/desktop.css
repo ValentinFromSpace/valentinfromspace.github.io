@@ -5,7 +5,19 @@ html {
 
 body {
   margin: 0 0 0 0;
-  margin: 0 auto 0 auto;
+}
+
+div.margin {
+  margin: 0 5vw 100px 5vw;
+}
+
+section {
+  max-width: 1300px;
+  margin: 70px 0;
+}
+
+section:first-child {
+  margin: 25px auto;
 }
 
 
@@ -14,25 +26,26 @@ body {
 nav {
   margin-top: 25px;
   text-align: center;
+  height: 40px;
   -webkit-user-select: none;
 }
 
-ul {
+nav ul {
   padding: 0 0 0 0;
 }
 
-li {
+nav li {
   display: inline;
   margin: 0 25px 0 0;
   font-weight: bold;
-  font-size: 90%;
+  font-size: 14px;
 }
 
-li:last-child {
+nav li:last-child {
   margin: 0;
 }
 
-a {
+nav a {
   color: rgba(7, 7, 7, 0.5);
   text-decoration: none;
   border-style: solid;
@@ -42,16 +55,17 @@ a {
   transition: all 0.2s ease;
 }
 
-#logo {
+nav #logo {
   font-weight: 900;
   font-size: 20px;
   padding: 0 0 0 1px;
+  line-height: 14px;
   background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-a:hover {
+nav a:hover {
   color: rgba(7, 7, 7, 1);
   border-style: solid;
   border-width: 10px 0 0 0;
@@ -143,6 +157,7 @@ h6 {
   font-size: 16px;
   text-transform: lowercase;
   margin: 0;
+  opacity: 0.5;
 }
 
 em {
@@ -180,7 +195,13 @@ cite {
   font-size: 35px;
   font-family: "Big Caslon", serif;
   font-style: normal;
-  margin: 0;
+  margin: 30px 0;
+}
+
+a {
+  color: #313131;
+  text-decoration: none;
+  transition: all 0.4s ease;
 }
 
 /* ----------------------TYPOGRAPHY:END---------------------- */
@@ -208,26 +229,56 @@ video {
 div.flex-row-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 div.flex-column-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 div.inline-wrapper {
   display: inline;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 /* ----------------------WRAPPER:END---------------------- */
+
+
+
+/* ----------------------CARD-STYLE:START---------------------- */
+
+.card {
+  background-color: #FFF;
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
+}
+
+.card.link:hover {
+  margin-top: -3px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.card-inset {
+  margin: 40px;
+  margin-bottom: 0;
+}
+
+/* ----------------------CARD-STYLE:END---------------------- */
 
 
 
 /* ----------------------PREVIEW-ITEMS:START---------------------- */
 
-a.preview {
+.preview a {
   display: flex;
   flex-direction: column;
   color: #313131;
@@ -236,22 +287,32 @@ a.preview {
   border-radius: 50px 50px 15px 15px;
 }
 
-div.description {
+.preview div {
   margin: 20px 0 0 0;
   max-width: 300px;
   width: 20vw;
 }
 
-p.description {
+.preview p {
   margin-right: 20px;
 }
 
-a.preview:hover {
+.preview a:hover {
   border: none;
   color: #000;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.15);
 }
+
+.preview img {
+  width: 20vw;
+  height: auto;
+  max-width: 300px;
+  min-width: 150px;
+  pointer-events: visible;
+  border-radius: 40px;
+}
+
 
 /* ----------------------PREVIEW-ITEMS:END---------------------- */
 
@@ -260,7 +321,7 @@ a.preview:hover {
 /* ----------------------FOOTER:START---------------------- */
 
 footer {
-  margin: 100px 50vw 100px 5vw;
+  margin: 100px 50vw 100px 0;
   padding: 40px;
   background-color: #FFF;
   border-radius: 65px;
