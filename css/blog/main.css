@@ -1,0 +1,17 @@
+div.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+div.flex-row-wrapper {
+  margin: 20px 0 0 -11px;
+}
+
+.text {
+  max-width: 70vw;
+}
+
+h6 {
+  margin-left: auto;
+}
