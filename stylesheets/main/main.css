@@ -1,11 +1,22 @@
 
 html {
   font-family: "Avenir Next", sans-serif;
-  color: #313131;
+  color: var(--textcolor);
+  background-color: var(--backgroundcolor);
+  overflow-y: hidden;
 }
 
 body {
   margin: 0 5vw 0 5vw;
+}
+
+section {
+  max-width: 1300px;
+  margin: 70px auto;
+}
+
+section:first-child {
+  margin: 25px auto;
 }
 
 .margin {
@@ -37,6 +48,7 @@ body {
   /* ----------------------Colors---------------------- */
   --gradient: -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
   --textcolor: #313131;
+  --backgroundcolor: #F2F2F2;
   --textaccent: #F46C6A;
 
 }
@@ -133,3 +145,31 @@ a {
 }
 
 /* ----------------------TYPOGRAPHY:END---------------------- */
+
+
+
+/* ----------------------CARD-STYLE:START---------------------- */
+
+.card {
+  background-color: #FFF;
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
+}
+
+.card.link:hover {
+  margin-top: -3px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.card-inset {
+  margin: 40px;
+  margin-bottom: 0;
+}
+
+/* ----------------------CARD-STYLE:END---------------------- */

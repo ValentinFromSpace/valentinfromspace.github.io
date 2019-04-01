@@ -1,94 +1,83 @@
-html {
-  background-color: #F2F2F2;
-}
 
-body {
-  margin-bottom: 100px;
-}
-
-div#body {
-  margin: 0 5vw 0 5vw;
-}
-
-div.flex-row-wrapper {
-  justify-content: space-between;
-}
-
-div.card {
-  background-color: #FFF;
-  margin-top: 30px;
-  height: 500px;
-  border-radius: 50px;
-  box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  transition: all 0.2s ease;
-  min-width: 90vw;
-}
-
-div.card-inset {
-  margin: 30px;
-  margin-bottom: 0;
-}
-
-div.primary {
-  width: 64%;
-}
-
-div.newsletter {
-  width: 34%;
+img {
+  width: 100%;
   height: auto;
 }
 
-div.newsletter .card-inset {
-  margin-bottom: 30px;
+.card {
+  width: 90vw;
 }
 
-div.secondary {
-  width: 32%;
-  height: 320px;
+/*----------------Welcome-Section----------------*/
+
+#welcome .placeholder {
+  display: none;
 }
 
-div.news-primary {
-  width: 100%;
+#welcome .sub {
+  margin: var(--spacing-xs) 0 var(--spacing-s) 0;
 }
 
-h1 {
-  margin: 5px 0;
-  color: #000;
-  transition: all 0.4s ease;
+#welcome div.newsletter {
+  height: auto;
 }
 
-h1.section {
-  margin-top: 70px;
-}
 
-div.card-square {
+/*----------------Discover-Section----------------*/
+
+#discover .card.square {
   position: relative;
   width: 100%;
   padding-top: 100%;
   height: 0;
 }
 
-div.card-inset.square {
+#discover .square .card-inset {
   position: absolute;
   top: 0;
 }
 
-h3 {
-  margin: 30px 0 0 5vw;
+
+/*----------------News-Section----------------*/
+
+#news a {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFF;
+  overflow: hidden;
 }
 
-p.sub {
-  margin: 8px 0 0 0;
+#news .flex-row-wrapper {
+  height: 100%;
 }
 
-img {
-  height: auto;
-  margin-top: 10px;
+#news .text {
+  margin-bottom: var(--spacing-s)
+}
+
+#news h1:not(.section) {
+  color: #FFF;
+}
+
+#news .foreground {
   width: 100%;
-  align-self: flex-end;
 }
 
-.primary img {
-  width: 110%;
+#news .foreground img {
+  display: flex;
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+
+#news img.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%
+}
+
+#news img.background {
+  z-index: -1;
+
 }
