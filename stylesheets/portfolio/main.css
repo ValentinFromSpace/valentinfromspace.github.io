@@ -9,13 +9,13 @@ html {
 }
 
 #featured div.image {
-  margin-right: var(--spacing-xl);
+  margin-right: var(--spacing-m);
 }
 
 #featured .ornament {
   width: 65px;
   height: 6px;
-  background-image: var(--primary-gradient);
+  background-image: var(--gradient);
   border-radius: 10px;
   margin-bottom: var(--spacing-xxs);
 }
@@ -71,7 +71,7 @@ section#collections {
   padding-top: 100%;
   position: relative;
   background-image: linear-gradient(0deg, #25095B 0%, #241C8B 100%);
-  border-radius: var(--medium-radius);
+  border-radius: var(--radius-m);
   overflow: hidden;
 
   display: flex;
@@ -106,8 +106,8 @@ section#collections {
 }
 
 #collections h1 {
-  padding-top: var(--spacing-xxl);
-  margin-bottom: var(--spacing-x);
+  padding-top: var(--spacing-l);
+  margin-bottom: var(--spacing-s);
   color: #FFF;
 }
 
@@ -125,7 +125,7 @@ section#collections {
 }
 
 #collections .text {
-  margin: var(--spacing-x) 0 var(--spacing-xxxl) var(--spacing-xxxs);
+  margin: var(--spacing-s) 0 var(--spacing-l) 0;
 }
 
 
@@ -134,17 +134,17 @@ section#collections {
 #latest img.large {
   width: 296px;
   height: 296px;
-  border-radius: var(--medium-radius);
+  border-radius: var(--radius-m);
 }
 
 #latest img.small {
   width: 140px;
   height: 140px;
-  border-radius: var(--medium-radius);
-  margin: 0 var(--spacing-xs) var(--spacing-xs) 0;
+  border-radius: var(--radius-m);
+  margin: 0 var(--spacing-s) var(--spacing-s) 0;
 }
 
 #latest .flex-row-wrapper.small {
-  margin-left: var(--spacing-xs);
+  margin-left: var(--spacing-s);
   align-self: flex-end;
 }
