@@ -12,6 +12,9 @@ body {
   margin: 0 5vw 0 5vw;
 }
 
+.full-width {
+  margin: 0 -5vw 0 -5vw;
+}
 
 
 /* ----------------------VARIABLES:START---------------------- */
@@ -27,7 +30,7 @@ body {
   --spacing-xl: 128px;
 
   /* ----------------------Layer-Styles---------------------- */
-  --radius-s: 15px;
+  --radius-s: 20px;
   --radius-m: 30px;
   --radius-l: 50px;
 
@@ -62,7 +65,7 @@ h1 {
 h2 {
   font-weight: 900;
   line-height: 30px;
-  
+
 }
 
 h3 {
