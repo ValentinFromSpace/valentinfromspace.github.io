@@ -1,16 +1,4 @@
-div.comingsoon {
-  margin-top: 30vh;
-}
+html {
+  background-color: var(--backgroundcolor-dark);
 
-.comingsoon h1 {
-  margin-left: 5vw;
-}
-
-.comingsoon img {
-  width: 70vw;
-  height: auto;
-}
-
-footer {
-  margin-top: 300px;
 }

@@ -2,8 +2,8 @@
 html {
   font-family: "Avenir Next", sans-serif;
   color: var(--textcolor);
-  background-color: var(--backgroundcolor);
-  overflow-y: hidden;
+  background-color: var(--backgroundcolor-bright);
+  transition: all 0.4s ease;
 }
 
 body {
@@ -48,8 +48,9 @@ section:first-child {
   /* ----------------------Colors---------------------- */
   --gradient: -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
   --textcolor: #313131;
-  --backgroundcolor: #F2F2F2;
   --textaccent: #F46C6A;
+  --backgroundcolor-bright: #FFFFFF;
+  --backgroundcolor-dark: #F2F2F2;
 
 }
 
@@ -153,7 +154,7 @@ a {
 .card {
   background-color: #FFF;
   height: 500px;
-  border-radius: 50px;
+  border-radius: var(--radius-l);
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.2s ease;
@@ -161,14 +162,22 @@ a {
 }
 
 .card.link:hover {
-  margin-top: -3px;
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
+.card.link:hover h1, .card.link:hover h2 {
+  color: var(--textaccent) !important;
+  transition: all 0.4s ease;
+}
+
+h1, h2 {
+  transition: all 0.4s ease;
+}
+
 .card-inset {
-  margin: 40px;
+  margin: var(--spacing-m);
   margin-bottom: 0;
 }
 
