@@ -11,6 +11,7 @@ body {
 
 section:first-child {
   margin-top: 25px;
+  border: none;
 }
 
 section {
@@ -21,6 +22,12 @@ section {
 
 h1 {
   margin: 0 0 20px 0;
+}
+
+.is-outside {
+  transform: translateY(2vh);
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
 /*---------------Nav---------------*/
@@ -51,6 +58,7 @@ div.item {
   border-radius: 10px;
   margin-bottom: 30px;
   display: inline-block;
+  will-change: transform;
 }
 
 div.item .overlay {
@@ -76,7 +84,7 @@ div.item .border {
   position: absolute;
   width: 100%;
   height: 100%;
-  transform: scale(1.1);
+  transform: scale(1.05);
   opacity: 0.5;
 }
 
@@ -111,6 +119,16 @@ div.item p {
 img {
   width: 100%;
   height: auto;
+}
+
+img.background {
+  filter: blur(0px);
+  will-change: transform;
+}
+
+div.item:hover img.background {
+  filter: blur(2px);
+  transform: scale(1.03);
 }
 
 
