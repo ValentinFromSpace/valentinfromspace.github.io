@@ -1,1 +1,29 @@
-<svg height="85" viewBox="0 0 313 85" width="313" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" x1="105.407808%" x2="79.9337%" y1="50%" y2="50%"><stop offset="0" stop-color="#ffa135"/><stop offset="1" stop-color="#e91ca1"/></linearGradient><path d="m1741.98595 33.6792453v-17.3522849c0-8.85739776 7.18152-16.03773587 16.04039-16.03773587 2.49019 0 4.94618.57968556 7.17348 1.69314868l52.35473 26.17303959c7.9236 3.9611492 11.13527 13.5945841 7.17347 21.5168808-1.55211 3.1037413-4.06922 5.6204229-7.17347 7.1722936l-52.35473 26.1730396c-7.92361 3.9611491-17.55864.7500031-21.52044-7.1722936-1.11365-2.2269262-1.69343-4.6825137-1.69343-7.1722936v-17.3522849h-1741.98595v-17.6415094z" fill="url(#a)" transform="translate(-1514)"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="85px" viewBox="0 0 313 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 54 (76446) - https://sketchapp.com -->
+    <title>media/portfolio/icons/web</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <linearGradient x1="105.407808%" y1="50%" x2="79.9337002%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFA135" offset="0%"></stop>
+            <stop stop-color="#E91CA1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Redesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pages/Portfolio/Light/Redesign/Serif" transform="translate(-937.000000, -1094.000000)" fill="url(#linearGradient-1)">
+            <g id="Collections-Section" transform="translate(0.000000, 792.000000)">
+                <g id="Collections" transform="translate(127.000000, 157.000000)">
+                    <g id="Web-Collection" transform="translate(810.000000, 0.000000)">
+                        <g id="Web-Image">
+                            <g id="Other/Arrow" transform="translate(-1514.000000, 145.000000)">
+                                <g id="Combined-Shape">
+                                    <path d="M1741.98595,33.6792453 L1741.98595,16.3269604 C1741.98595,7.46956264 1749.16747,0.289224528 1758.02634,0.289224528 C1760.51653,0.289224528 1762.97252,0.868910094 1765.19982,1.98237321 L1817.55455,28.1554128 C1825.47815,32.116562 1828.68982,41.7499969 1824.72802,49.6722936 C1823.17591,52.7760349 1820.6588,55.2927165 1817.55455,56.8445872 L1765.19982,83.0176268 C1757.27621,86.9787759 1747.64118,83.7676299 1743.67938,75.8453332 C1742.56573,73.618407 1741.98595,71.1628195 1741.98595,68.6730396 L1741.98595,51.3207547 L0,51.3207547 L0,33.6792453 L1741.98595,33.6792453 Z" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
