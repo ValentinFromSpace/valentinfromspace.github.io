@@ -1,132 +1,912 @@
-<html lang="en">
+<html lang="en" id="background">
   <head>
     <meta charset="utf-8">
+    <title>Val's Stories</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Val</title>
-    <link rel='stylesheet' media='(max-width: 414px)' href='stylesheets/main/mobile.css'>
-    <link rel='stylesheet' media='(min-width: 415px)' href='stylesheets/main/desktop.css'>
-    <link rel='stylesheet' media='(min-width: 000px)' href='stylesheets/main/main.css'>
-    <link rel='stylesheet' media='(max-width: 768px)' href='stylesheets/home/mobile.css'>
-    <link rel='stylesheet' media='(min-width: 769px)' href='stylesheets/home/desktop.css'>
-    <link rel='stylesheet' media='(min-width: 000px)' href='stylesheets/home/main.css'>
-    <link rel="icon" href="media/other/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' media='(max-width: 414px)' href='../../stylesheets/main/mobile.css'>
+    <link rel='stylesheet' media='(min-width: 415px)' href='../../stylesheets/main/desktop.css'>
+    <link rel='stylesheet' media='(min-width: 000px)' href='../../stylesheets/main/main.css'>
+    <link rel='stylesheet' media='(max-width: 768px)' href='../../stylesheets/content/mobile.css'>
+    <link rel='stylesheet' media='(min-width: 768px)' href='../../stylesheets/content/desktop.css'>
+    <link rel='stylesheet' media='(min-width: 000px)' href='../../stylesheets/content/main.css'>
+    <link rel='stylesheet' media='(min-width: 000px)' href='../../stylesheets/main/typography/dark.css'>
+    <link rel="icon" href="../../media/other/favicon.ico" type="image/x-icon">
+    <script src="../../js/onscroll.js"></script>
   </head>
+  <nav>
+    <ul>
+      <li><a href="#tv-shows">TV Shows</a></li>
+      <li><a href="#podcasts">Podcasts</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#short-stories">Short Stories</a></li>
+      <li><a href="#trailers-and-teasers">Trailers and Teasers</a></li>
+      <li><a href="#movies">Movies</a></li>
+    </ul>
+  </nav>
   <body>
-    <nav>
-      <ul>
-        <li class="tab"><a href="pages/about">about</a></li>
-        <li class="tab"><a href="pages/portfolio">portfolio</a></li>
-        <li id="logo"><a id="logo" href="../">val</a></li>
-        <li class="tab"><a href="pages/blog">blog</a></li>
-        <li class="tab"><a href="pages/stories">stories</a></li>
-        <li id="contact"><a id="contact" href="mailto: valentinwalter@icloud.com">contact</a></li>
-      </ul>
-    </nav>
     <div>
-      <section id="welcome">
-        <div class="flex-row-wrapper">
-          <a href="html/blog/#Epic Journey" class="card link primary">
-            <div class="card-inset">
-              <h5>movie list:</h5>
-              <div>
-                <h1>Epic Journey</h1>
-                <p class="introduction">Discover 13 movies that tell the struggle and reward of an epic journey.</p>
+      <section id="tv-shows">
+        <h1>TV Shows</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <div class="overlay">
+              <div class="inset">
+                <div class="border">
+                  <img class="top" src="../../Media/Great Content/border top.svg">
+                  <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                </div>
+                <a href="#">
+                  <div class="text">
+                    <h3>The Expanse</h3>
+                    <p>The Expanse is an American science fiction television series developed by Mark Fergusand Hawk Ostby, based on The Expanse series of novels by James S. A. Corey.</p>
+                  </div>
+                </a>
               </div>
             </div>
-            <img src="media/home/movies.png" alt="">
-          </a>
-          <div class="divider"></div>
-          <div class="card newsletter">
-            <div class="card-inset">
-              <h5 class="placeholder">Discover:</h5>
-              <h1>Subscribe</h1>
-              <p class="introduction">And be the first to find out about new developments.</p>
-              <div class="newsletter-form">
-                  <!-- Begin Mailchimp Signup Form -->
-                  <link href="stylesheets/main/newsletter/newsletter.css" rel="stylesheet" type="text/css">
-                  <style type="text/css">
-                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                  </style>
-                  <div id="mc_embed_signup">
-                  <form action="https://space.us20.list-manage.com/subscribe/post?u=b4b8e198aae76a4159cbebe4c&amp;id=3058f7c0de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address </label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></input>
-                  </div>
-                  <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                  </div>
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b4b8e198aae76a4159cbebe4c_3058f7c0de" tabindex="-1" value=""></div>
-                      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                      </div>
-                  </form>
-                  </div>
-                  <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                  <!--End mc_embed_signup-->
+            <img class="background" src="../../Media/Great Content/TV Shows/The Expanse.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <div class="overlay">
+              <div class="inset">
+                <div class="border">
+                  <img class="top" src="../../Media/Great Content/border top.svg">
+                  <img class="bottom" src="../../Media/Great Content/border bottom.svg">
                 </div>
-              <p class="sub">E-Mails are infrequent.</p>
+                <a href="#">
+                  <div class="text">
+                    <h3>Battlestar Galactica</h3>
+                    <p>A military science fiction television series, and part of the Battlestar Galactica franchise.</p>
+                  </div>
+                </a>
+              </div>
             </div>
+            <img class="background" src="../../Media/Great Content/TV Shows/Battlestar Galactica.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Stargate Universe</h3>
+                      <p>A multinational exploration team travels on the Ancient spaceship Destiny.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/TV Shows/Stargate Universe.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Castle</h3>
+                      <p>An American crime-comedy-drama television series, which aired for a total of eight seasons.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/TV Shows/Castle.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Misfortunate</h3>
+                      <p>Lemony Snicket's A Series of Unfortunate Events is a black comedy-drama television series.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/TV Shows/A Series Of Misfortunate Events.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Modern Family</h3>
+                      <p>Modern Family is a television mockumentary family sitcom that premiered on September 23, 2009.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/TV Shows/Modern Family.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Firefly</h3>
+                      <p>Firefly is a space Western drama television series, created by writer and director Joss Whedon.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/TV Shows/Firefly.jpeg" alt="">
+          </div>
+      </section>
+
+      <section id="podcasts">
+        <h1>Podcasts</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>The Futur</h3>
+                      <p>Business in the design industry.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/The Futur.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>StarTalk Radio</h3>
+                      <p>Space, science, and popular culture hosted by astrophysicist Neil deGrasse Tyson.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/StarTalk Radio.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>StarTalk All-Stars</h3>
+                      <p>Space, science, and popular culture hosted by former guests of StarTalk Radio.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/StarTalk Radio All-Access.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Stuff You Should Know</h3>
+                      <p>Stuff You Should Know, often abbreviated as SYSK, is an award-winning podcast and video series published by Stuff Media.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/Stuff You Should Know.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>99% Invisible</h3>
+                      <p>An independently produced radio show created by Roman Mars that focuses on design and architecture.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/99% Invisible.png" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Not So Nice Advice with Chuck Nice</h3>
+                      <p>Podcast by comic co-host of StarTalk Radion Chuck Nice.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/Not So Nice Advice with Chuck Nice.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>The Daily Show with Trevor Noah</h3>
+                      <p>The Daily Show is an American late-night talk and news satire television program.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Podcasts/The Daily Show with Trevor Noah.jpeg" alt="">
+          </div>
+      </section>
+      <section id="games">
+        <h1>Games</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Breath of the Wild</h3>
+                      <p>An action-adventure game developed and published by Nintendo.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/Breath of the Wild.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Detroit: Become Human</h3>
+                      <p>An adventure game developed by Quantic Dream. The plot revolves around three androids.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/Detroit Become Human.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Galaxy On Fire 2</h3>
+                      <p>Galaxy On Fire 2 is a spaceflight simulation video game created and distributed by Fishlabs in 2010.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/Galaxy On Fire 2.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Red Dead Redemption 2</h3>
+                      <p>A Western action-adventure game developed and published by Rockstar Games. It was released on October 26, 2018.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/Red Dead Redemption 2.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Star Citizen</h3>
+                      <p>An upcoming multiplayer, space trading and combat game developed and published by Cloud Imperium Games.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/Star Citizen.png" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Subnautica</h3>
+                      <p>An open-world survival-adventure video game developed and published by Unknown Worlds Entertainment.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/Subnautica.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>The Last Night</h3>
+                      <p>An upcoming cinematic platform game being developed by Odd Tales.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Games/The Last Night.jpeg" alt="">
+          </div>
+      </section>
+      <section id="books">
+        <h1>Books</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Ready Player One</h3>
+                      <p>Ready Player One is a 2011 science fiction novel, and the debut novel of American author Ernest Cline.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Books/Ready Player One.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>The Expanse</h3>
+                      <p>The Expanse is a series of science fiction novels (and related novellas and short stories) by James S. A. Corey.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Books/The Expanse.jpeg" alt="">
+          </div>
+      </section>
+      <section id="short-stories">
+        <h1>Short Stories</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Poetry Cloud</h3>
+                      <p>A short story written by Liu Cixin in 1997.[1] It was published in the March 2003 issue of Science Fiction World.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Short Stories/Poetry Cloud.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>The Last Question</h3>
+                      <p>A science fiction short story by American writer Isaac Asimov. It first appeared in November 1956.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Short Stories/The Last Question.jpg" alt="">
+          </div>
+      </section>
+      <section id="trailers-and-teasers">
+        <h1>Trailers and Teasers</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Chef's Table Season 5</h3>
+                      <p>Official Season 5 Trailer.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/Chef's Table.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Death Stranding</h3>
+                      <p>All teasers.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/Death Stranding.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Ready Player One</h3>
+                      <p>Comic Con Teaser</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/Ready Player One.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Squadron 42</h3>
+                      <p>Cinematic Trailer</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/Squadron 42.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Star Trek Discovery</h3>
+                      <p>Season 1 Official Trailer</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/Star Trek Discovery.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>The Last Night</h3>
+                      <p>E3 Teaser</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/The Last Night.jpeg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Westworld Season 2</h3>
+                      <p>Super Bowl Teaser</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Trailers and Teasers/Westworld Season 2.jpeg" alt="">
+          </div>
+      </section>
+      <section id="movies">
+        <h1>Movies</h1>
+        <div class="grid-wrapper">
+          <div class="item" data-scroll data-scroll-offset="200">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Arrival</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/arrival.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Ballad of Buster Scruggs</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/ballad of buster scruggs.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="200">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Blade Runner 2049</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/blade runner 2049.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="300">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Cloud Atlas</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/cloud atlas.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Dawn</h3>
+                      <p>Second installment of Planet of the Apes.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/dawn of the planet of the apes.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="200">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Interstellar</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/interstellar.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="300">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Logan</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/logan.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Midnight Special</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/midnight special.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="200">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Oblivion</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/oblivion.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="300">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Rise</h3>
+                      <p>First installment of Planet of the Apes.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/rise of the planet of the apes.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="100" onclick="">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Super 8</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/super 8.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="200">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>Tomorrowland</h3>
+                      <p>Body</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/tomorrowland.jpg" alt="">
+          </div>
+          <div class="item" data-scroll data-scroll-offset="300">
+            <a>
+              <div class="overlay">
+                <div class="inset">
+                  <div class="border">
+                    <img class="top" src="../../Media/Great Content/border top.svg">
+                    <img class="bottom" src="../../Media/Great Content/border bottom.svg">
+                  </div>
+                  <a href="#">
+                    <div class="text">
+                      <h3>War</h3>
+                      <p>Third installment of Planet of the Apes.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </a>
+            <img class="background" src="../../Media/Great Content/Movies/war for the planet of the apes.jpg" alt="">
           </div>
         </div>
       </section>
-      <section id="discover">
-        <h1 class="section">Discover</h1>
-        <div class="flex-row-wrapper wrap">
-          <a class="card link square" href="pages/resources">
-            <div class="card-inset">
-              <h5>Discover:</h5>
-              <h2>Resources</h2>
-              <img src="media/home/resources.jpg">
-            </div>
-          </a>
-          <a class="card link square" href="pages/portfolio#3D">
-            <div class="card-inset">
-              <h5>Latest Portfolio Piece:</h5>
-              <h2>Sunwalk</h2>
-              <img src="media/home/sunwalk.jpg">
-            </div>
-          </a>
-          <a class="card link square" href="pages/blog#Epic Journey">
-            <div class="card-inset">
-              <div class="flex-wrapper">
-                <div>
-                  <h5>Latest Blogpost:</h5>
-                  <h2>Epic Journey</h2>
-                </div>
-                <img src="media/home/movies small.jpg">
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section id="news">
-        <h1 class="section">News</h1>
-        <div class="flex-row-wrapper">
-          <a class="card link" title="Coming Soon">
-            <div class="card-inset">
-              <div class="flex-row-wrapper">
-                <div class="text">
-                  <h5>17 March 2019:</h5>
-                  <h1>Major Redesign</h1>
-                  <p class="introduction">Find out more about the fourth major redesign of valentinwalter.space.<p>
-                </div>
-                <div class="foreground">
-                  <img src="media/home/blueprint.png">
-                </div>
-              </div>
-              <img class="background">
-            </div>
-          </a>
-        </div>
-      </section>
     </div>
-  </body>
+    <div id="cancel-tap" onclick="" />
+  <body>
 </html>

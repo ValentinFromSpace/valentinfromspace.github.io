@@ -1,8 +1,18 @@
+@keyframes background {
+    0%, 100% {
+      background-position: top center
+    }
+    50% {
+      background-position: bottom center
+    }
+
+}
+
 html {
-  background-color: var(--backgroundcolor-dark);
-  background: linear-gradient(rgba(48, 35, 174, 0.1), rgba(200, 109, 215, 0.1));
-  background-color: #000;
   margin: 0;
+  background: linear-gradient(-45deg, #1A040C, #110217, #1A040C, #110217);
+	background-size: 400% 400%;
+  animation: background 15s infinite;
 }
 
 body {
@@ -58,7 +68,8 @@ div.item {
   border-radius: 10px;
   margin-bottom: 30px;
   display: inline-block;
-  will-change: transform;
+  will-change: transform, opacity;
+  z-index: 2;
 }
 
 div.item .overlay {
@@ -70,6 +81,7 @@ div.item .overlay {
   z-index: 1;
   opacity: 0.0;
   background-color: rgba(0, 0, 0, 0.0);
+  will-change: opacity;
 }
 
 div.item .inset {
@@ -86,6 +98,7 @@ div.item .border {
   height: 100%;
   transform: scale(1.05);
   opacity: 0.5;
+  z-index: -1;
 }
 
 div.item:hover .border {
@@ -112,8 +125,24 @@ div.item .text {
   margin: 25px;
 }
 
-div.item p {
+div.item .text:hover p {
+  opacity: 1.0;
+}
+
+div.item .text:hover p::after {
+  content: "..."
+}
+
+div.text h3 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+div.text p {
   opacity: 0.7;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15.5px;
 }
 
 img {
@@ -123,7 +152,8 @@ img {
 
 img.background {
   filter: blur(0px);
-  will-change: transform;
+  border-radius: 10px;
+  will-change: transform, filter;
 }
 
 div.item:hover img.background {
@@ -131,11 +161,20 @@ div.item:hover img.background {
   transform: scale(1.03);
 }
 
+div#cancel-tap {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 40px; /*Navbar Safe Area*/
+  left: 0;
+  z-index: 1;
+}
+
 
 /*---------------TV-Shows---------------*/
 
-#tv-shows  {
-
+#tv-shows p {
+  font-size: 13px;
 }
 
 
