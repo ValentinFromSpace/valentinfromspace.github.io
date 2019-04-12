@@ -120,6 +120,21 @@ div.item:hover .overlay {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+div.item:hover .overlay a {
+  display: block;
+}
+
+div.item .overlay a {
+  animation: displayNone 3s 1;
+  animation-delay: 2s;
+}
+
+@keyframes displayNone {
+  100% {
+    display: none;
+  }
+}
+
 div.item .text {
   width: 70%;
   margin: 25px;
@@ -130,7 +145,7 @@ div.item .text:hover p {
 }
 
 div.item .text:hover p::after {
-  content: "..."
+  content: "..";
 }
 
 div.text h3 {
@@ -143,6 +158,7 @@ div.text p {
   font-weight: normal;
   font-size: 14px;
   line-height: 15.5px;
+  break-after: avoid;
 }
 
 img {
@@ -165,7 +181,7 @@ div#cancel-tap {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  top: 40px; /*Navbar Safe Area*/
+  top: 65px; /*Navbar Safe Area*/
   left: 0;
   z-index: 1;
 }

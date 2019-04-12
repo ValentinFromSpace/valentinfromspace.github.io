@@ -56,10 +56,22 @@ nav a:hover {
 li#contact {
   position: absolute;
   right: 70px;
-  background: -webkit-linear-gradient(135deg, #FF346F, #FF743E);
+  background: -webkit-linear-gradient(135deg, #FF346F, #FF743E, #FF346F, #FF743E);
+  background-size: 400% 400%;
+  animation: background 15s infinite;
   padding: 7px 12px;
   border-radius: 30px;
   transition: all 0.4s ease;
+}
+
+@keyframes background {
+    0%, 100% {
+      background-position: top center
+    }
+    50% {
+      background-position: bottom center
+    }
+
 }
 
 a#contact {
@@ -72,7 +84,6 @@ a#contact:hover {
   border-width: 0 0 0 0;
   -webkit-border-image:
     -webkit-linear-gradient(left, rgba(255, 52, 111, 1.0), rgba(255, 116, 62, 1.0)) 100% 1;
-  transition: all 0.4s ease;
 }
 
 li#contact:hover {
