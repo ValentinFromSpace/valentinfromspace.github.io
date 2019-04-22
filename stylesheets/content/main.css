@@ -140,10 +140,6 @@ div.item .text {
   margin: 25px;
 }
 
-div.item .text:hover p {
-  opacity: 1.0;
-}
-
 div.item .text:hover p::after {
   content: "..";
 }
