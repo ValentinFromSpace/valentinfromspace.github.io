@@ -219,6 +219,7 @@
 
 .text-block.light {
   color: rgba(0, 0, 0, 0.7);
+  line-height: 24px;
 }
 
 .skill-tree-column {
@@ -571,7 +572,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: rgba(0, 0, 0, 0.7);
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .text-block-3.dark {
@@ -1186,7 +1187,7 @@
 
 .text-block-6 {
   font-size: 22px;
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .div-block-24 {
@@ -1217,10 +1218,18 @@
   background-repeat: no-repeat;
   box-shadow: 0 0 40px 19px rgba(0, 0, 0, 0.04);
   opacity: 1;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
   font-weight: 400;
+}
+
+.button-4:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .button-4.twitter {
@@ -1526,6 +1535,17 @@
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+  }
+  .div-block-25 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .div-block-26 {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
