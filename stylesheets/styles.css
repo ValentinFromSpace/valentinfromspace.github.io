@@ -1,0 +1,253 @@
+/*---------------------Layout---------------------*/
+body {
+    background: #FFFEFD;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    max-width: 1200px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+article {
+    margin: 88px 0 0 0;
+}
+
+.article-header {
+    margin: 0 0 64px 0;
+}
+
+.seperator {
+    border-bottom: 4px solid #EDEDED;
+}
+
+
+/*---------------------Markdown---------------------*/
+
+h1 {
+    font-family: "TextaAlt";
+    font-size: 58px;
+    line-height: 58px;
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 32px;
+    color: #000000;
+    margin-top: 64px;
+}
+
+img {
+    border: 0 solid #D3D3D3;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), inset 0 0 0 0.5px #D3D3D3;
+    border-radius: 8px;
+    padding: 0.5px;
+    margin: 36px 0 0 0;
+}
+
+img + em {
+    font-family: serif; /*Should be sans*/
+    opacity: 0.6;
+    font-size: 20px;
+    color: #41404A;
+    line-height: 30px;
+    font-style: normal;
+}
+
+.date {
+    display: inline-block;
+    opacity: 0.6;
+    font-family: "TextaAlt";
+    font-weight: 600;
+    font-size: 24px;
+    color: #3C3C43;
+    letter-spacing: 0;
+    text-align: right;
+    margin: 24px 0 32px 0;
+}
+
+p {
+    font-family: serif;
+    font-size: 24px;
+    color: #252525;
+    line-height: 36px;
+    margin: 36px 0 0 0;
+}
+
+p code {
+    font-family: monospace;
+    font-size: 18px;
+    color: #F72057;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), inset 0 0 0 0.5px #D3D3D3;
+}
+
+p a {
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(65, 64, 74, 0.6);
+}
+
+p a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+blockquote {
+    margin: 0;
+    padding: 24px 44px 24px 35px;
+    opacity: 0.8;
+    color: #252525;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), inset 0 0 0 0.5px #D3D3D3;
+    border-radius: 8px;
+    border-left: 9px solid #FF9519;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+
+/*---------------------Navbar---------------------*/
+nav {
+    display: flex;
+    text-align: center;
+    margin: 44px 0 28px 0;
+    width: 100%;
+}
+
+nav img, .logo {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: none;
+    width: 64px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    opacity: 0.5;
+    font-weight: 600;
+    font-family: "TextaAlt";
+    font-size: 24px;
+    color: #000000;
+}
+
+nav a.selected {
+    font-weight: 800;
+    opacity: 1;
+}
+
+.honey-link {
+    font-family: "TextaAlt";
+    font-size: 24px;
+    color: #FF9519;
+    background: rgba(255, 149, 25, 0.1);
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 7px 14px;
+    opacity: 1;
+}
+
+li:not(:last-child) {
+    align-self: flex-end;
+}
+
+
+/*---------------------Code Block---------------------*/
+pre code {
+    font-family: monospace;
+    display: block;
+    background-color: #FFF;
+
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), inset 0 0 0 0.5px #D3D3D3;
+    border-radius: 8px;
+
+    margin: 36px 0 1.5em 0;
+    padding: 18px 22px;
+
+    color: #000;
+    line-height: 1.4em;
+    font-size: 16px;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+}
+
+pre code .keyword {
+    color: #F72057;
+}
+
+pre code .type {
+    color: #FF9519;
+}
+
+pre code .call {
+    color: #FF5700;
+}
+
+pre code .property {
+    color: #21ab9d;
+}
+
+pre code .number {
+    color: #F72057;
+}
+
+pre code .string {
+    color: #F72057;
+}
+
+pre code .comment {
+    color: #6b8a94;
+}
+
+pre code .dotAccess {
+    color: #FF5700;
+}
+
+pre code .preprocessing {
+    color: #b68a00;
+}
+
+
+/*---------------------Fonts---------------------*/
+
+@font-face {
+    font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Heavy.otf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Bold.otf");
+    font-weight: 600;
+    font-style: normal;
+}
