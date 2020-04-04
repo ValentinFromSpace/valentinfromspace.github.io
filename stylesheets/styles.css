@@ -1,4 +1,4 @@
-/*---------------------Layout---------------------*/
+/*---------------------General---------------------*/
 body {
     background: #FFFEFD;
     margin: 0 auto;
@@ -20,13 +20,32 @@ article {
 }
 
 .seperator {
-    border-bottom: 4px solid #EDEDED;
+    border-bottom: 4px solid rgba(0,0,0,0.06);
 }
 
+nav, footer {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+.logo, nav img, footer img {
+    opacity: 1;
+    border-radius: 0;
+    box-shadow: none;
+    width: 64px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+}
 
 /*---------------------Markdown---------------------*/
 
-h1 {
+article h1 {
     font-family: "TextaAlt";
     font-size: 58px;
     line-height: 58px;
@@ -35,14 +54,14 @@ h1 {
     margin: 0;
 }
 
-h2 {
+article h2 {
     font-family: serif;
     font-size: 32px;
     color: #000000;
     margin-top: 64px;
 }
 
-img {
+article img {
     border: 0 solid #D3D3D3;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), inset 0 0 0 0.5px #D3D3D3;
     border-radius: 8px;
@@ -50,16 +69,17 @@ img {
     margin: 36px 0 0 0;
 }
 
-img + em {
-    font-family: serif; /*Should be sans*/
+article img + em {
+    font-family: "TextaAlt";
     opacity: 0.6;
     font-size: 20px;
+    font-weight: 600;
     color: #41404A;
     line-height: 30px;
     font-style: normal;
 }
 
-.date {
+article .date {
     display: inline-block;
     opacity: 0.6;
     font-family: "TextaAlt";
@@ -71,7 +91,7 @@ img + em {
     margin: 24px 0 32px 0;
 }
 
-p {
+article p {
     font-family: serif;
     font-size: 24px;
     color: #252525;
@@ -79,22 +99,30 @@ p {
     margin: 36px 0 0 0;
 }
 
-p code {
+article p code {
     font-family: monospace;
     font-size: 18px;
     color: #F72057;
     padding: 4px 10px;
     border-radius: 8px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), inset 0 0 0 0.5px #D3D3D3;
+
+    -webkit-touch-callout: all; /* iOS Safari */
+      -webkit-user-select: all; /* Safari */
+       -khtml-user-select: all; /* Konqueror HTML */
+         -moz-user-select: all; /* Old versions of Firefox */
+          -ms-user-select: all; /* Internet Explorer/Edge */
+              user-select: all; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
 }
 
-p a {
+article p a {
     font-weight: 500;
     text-decoration: none;
     color: rgba(65, 64, 74, 0.6);
 }
 
-p a:hover {
+article p a:hover {
     text-decoration: none;
     color: #000;
 }
@@ -122,16 +150,6 @@ nav {
     width: 100%;
 }
 
-nav img, .logo {
-    opacity: 1;
-    border-radius: 0;
-    box-shadow: none;
-    width: 64px;
-    height: 32px;
-    margin: 0;
-    padding: 0;
-}
-
 nav ul {
     display: flex;
     align-items: center;
@@ -141,7 +159,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
 }
 
 nav ul li:not(:last-child) {
@@ -150,8 +168,8 @@ nav ul li:not(:last-child) {
 
 nav a {
     text-decoration: none;
+    font-weight: 700;
     opacity: 0.5;
-    font-weight: 600;
     font-family: "TextaAlt";
     font-size: 24px;
     color: #000000;
@@ -163,18 +181,81 @@ nav a.selected {
 }
 
 .honey-link {
-    font-family: "TextaAlt";
-    font-size: 24px;
+    position: relative;
     color: #FF9519;
-    background: rgba(255, 149, 25, 0.1);
-    box-shadow: 0 0 40px 0 rgba(0,0,0,0.08);
+    background: rgba(255, 149, 25, 0.10);
     border-radius: 8px;
     padding: 7px 14px;
     opacity: 1;
+    transition: all 0.4s;
 }
 
-li:not(:last-child) {
-    align-self: flex-end;
+/*.honey-link::after {*/
+/*    display: inline-block;*/
+/*    content: "↗";*/
+/*    color: #FF9519;*/
+/*    font-size: 14px;*/
+/*    z-index: 1;*/
+/*    text-align: left;*/
+/*    vertical-align: text-top;*/
+/*    margin-left: 4px;*/
+/*}*/
+
+.honey-link:hover {
+    background: rgba(255, 149, 25, 0.20);
+}
+
+
+/*---------------------Footer---------------------*/
+footer {
+    margin-top: 256px;
+}
+
+footer .seperator {
+    margin-bottom: 32px;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .groups {
+    position: absolute;
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+footer .group {
+    margin-right: 64px;
+}
+
+footer .group-heading, footer span {
+    color: rgba(65, 64, 74, 0.60);
+}
+
+footer .links * {
+    font-family: "TextaAlt";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer .group * {
+    display: block;
+    margin-bottom: 12px;
+}
+
+footer #publish-link {
+    max-width: 200px;
+    margin-left: 32px;
 }
 
 
@@ -197,6 +278,15 @@ pre code {
     overflow-x: auto;
     white-space: pre;
     -webkit-overflow-scrolling: touch;
+
+    -webkit-touch-callout: all; /* iOS Safari */
+      -webkit-user-select: all; /* Safari */
+       -khtml-user-select: all; /* Konqueror HTML */
+         -moz-user-select: all; /* Old versions of Firefox */
+          -ms-user-select: all; /* Internet Explorer/Edge */
+              user-select: all; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+
 }
 
 pre code .keyword {
@@ -240,6 +330,13 @@ pre code .preprocessing {
 
 @font-face {
     font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Black.otf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TextaAlt";
     src: url("/fonts/TextaAlt-Heavy.otf");
     font-weight: 800;
     font-style: normal;
@@ -248,6 +345,34 @@ pre code .preprocessing {
 @font-face {
     font-family: "TextaAlt";
     src: url("/fonts/TextaAlt-Bold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Medium.otf");
     font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Regular.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Book.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TextaAlt";
+    src: url("/fonts/TextaAlt-Thin.otf");
+    font-weight: 100;
     font-style: normal;
 }

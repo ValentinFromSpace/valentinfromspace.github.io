@@ -1,0 +1,13 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #FFE6CA;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    margin-top: 20vh;
+}
