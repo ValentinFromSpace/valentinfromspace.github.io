@@ -31,12 +31,25 @@ var themes = {
 }
 
 function switchTheme(theme) {
-    document.getElementById("theme").setAttribute("href", "/stylesheets/themes/" + theme + ".css");
+    // Set href of theme link
+    document
+      .getElementById("theme")
+      .setAttribute("href", "/stylesheets/themes/" + theme + ".css")
+
+    // Set theme attribute on body
     document.body.setAttribute("theme", theme)
+
+    // Store choice locally
     localStorage.setItem("theme", theme)
 }
 
 function setThemeFromLocalStorage() {
-    var theme = localStorage.getItem("theme");
-    switchTheme(theme);
+    // Retrieve user choice
+    var theme = localStorage.getItem("theme")
+
+    // Assign default value
+    if (theme == null) { theme = "sepia" }
+
+    // Switch theme
+    switchTheme(theme)
 }

@@ -1,5 +1,6 @@
-@charset "UTF-8";
-/*---------------------General---------------------*/
+/*------------------------------------------------------------------------------
+General
+*/
 body {
   margin: 0 auto;
   margin-bottom: 12vh;
@@ -43,7 +44,11 @@ nav, footer {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently
-     supported by Chrome, Opera and Firefox */
+  supported by Chrome, Opera and Firefox */
+}
+nav a, footer a {
+  -webkit-touch-callout: all;
+  /* iOS Safari */
 }
 
 .logo, nav img, footer img {
@@ -62,9 +67,13 @@ body[theme=dark] .logo {
 
 a {
   color: var(--text);
+  -webkit-touch-callout: contain !important;
+  /* iOS Safari */
 }
 
-/*---------------------Markdown---------------------*/
+/*------------------------------------------------------------------------------
+Markdown
+*/
 article h1 {
   font-family: "TextaAlt";
   font-size: 58px;
@@ -72,20 +81,19 @@ article h1 {
   font-weight: 800;
   margin: 0;
 }
-
 article h2 {
   font-family: serif;
   font-size: 32px;
   margin-top: 64px;
 }
-
 article img {
   box-shadow: 0 10px 20px 0 var(--block-shadow), inset 0 0 0 0.5px var(--block-border);
   border-radius: 8px;
   padding: 0.5px;
   margin: 36px 0 0 0;
+  width: 100%;
+  height: auto;
 }
-
 article img + em {
   font-family: "TextaAlt";
   opacity: 0.6;
@@ -94,7 +102,6 @@ article img + em {
   line-height: 30px;
   font-style: normal;
 }
-
 article .date {
   display: inline-block;
   opacity: 0.6;
@@ -105,7 +112,6 @@ article .date {
   text-align: right;
   margin: 24px 0 32px 0;
 }
-
 article p {
   font-family: serif;
   font-size: 24px;
@@ -114,7 +120,6 @@ article p {
   opacity: 0.85;
   color: var(--text);
 }
-
 article p code {
   font-family: monospace;
   font-size: 18px;
@@ -137,20 +142,17 @@ article p code {
   /* Non-prefixed version, currently
   supported by Chrome, Opera and Firefox */
 }
-
 article p a {
   font-weight: 500;
   text-decoration: none;
   opacity: 0.6;
 }
-
 article p a:hover {
   text-decoration: none;
   opacity: 1;
 }
-
-blockquote {
-  margin: 0;
+article blockquote {
+  margin: 36px 0 0 0;
   padding: 24px 44px 24px 35px;
   opacity: 0.8;
   border-radius: 8px;
@@ -158,19 +160,19 @@ blockquote {
   box-shadow: 0 10px 20px 0 var(--block-shadow), inset 0 0 0 0.5px var(--block-border);
   background: var(--block-background);
 }
-
-blockquote p {
+article blockquote p {
   margin: 0;
 }
 
-/*---------------------Navbar---------------------*/
+/*------------------------------------------------------------------------------
+Navbar
+*/
 nav {
   display: flex;
   text-align: center;
   margin: 44px 0 28px 0;
   width: 100%;
 }
-
 nav ul {
   display: flex;
   align-items: center;
@@ -178,15 +180,12 @@ nav ul {
   padding: 0;
   margin-left: auto;
 }
-
 nav ul li {
   display: inline;
 }
-
 nav ul li:not(:last-child) {
   margin-right: 20px;
 }
-
 nav a {
   text-decoration: none;
   font-weight: 700;
@@ -194,97 +193,77 @@ nav a {
   font-family: "TextaAlt";
   font-size: 24px;
 }
-
 nav a.selected {
   font-weight: 800;
   opacity: 1;
 }
-
-.honey-link {
+nav .honey-link {
   position: relative;
   color: #FF9519;
   background: rgba(255, 149, 25, 0.1);
   border-radius: 8px;
   padding: 7px 14px;
   opacity: 1;
-  transition: all 0.4s;
+  transition: background 0.4s;
 }
-
-/*.honey-link::after {*/
-/*    display: inline-block;*/
-/*    content: "↗";*/
-/*    color: #FF9519;*/
-/*    font-size: 14px;*/
-/*    z-index: 1;*/
-/*    text-align: left;*/
-/*    vertical-align: text-top;*/
-/*    margin-left: 4px;*/
-/*}*/
-.honey-link:hover {
+nav .honey-link:hover {
   background: rgba(255, 149, 25, 0.2);
 }
 
-/*---------------------Footer---------------------*/
+/*------------------------------------------------------------------------------
+Footer
+*/
 footer {
   margin-top: 256px;
+  margin-bottom: 32px;
 }
-
+footer ul {
+  margin: 0;
+  padding: 0;
+}
 footer .seperator {
   margin-bottom: 32px;
 }
-
 footer .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-
-footer a {
-  text-decoration: none;
-}
-
-footer .groups {
-  position: absolute;
-  display: flex;
-  max-width: 800px;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-footer .group {
-  margin-right: 64px;
-}
-
-footer .group-heading, footer span * {
-  opacity: 0.6;
-}
-
 footer .links * {
   font-family: "TextaAlt";
   font-weight: 700;
   font-size: 20px;
 }
-
+footer a {
+  text-decoration: none;
+}
+footer .groups {
+  display: flex;
+  margin-left: 128px;
+}
+footer .group {
+  margin-right: 64px;
+}
 footer .group * {
   display: block;
   margin-bottom: 12px;
 }
-
+footer .group-heading, footer footer span * {
+  opacity: 0.6;
+}
 footer #publish-link {
   max-width: 200px;
-  margin-left: 32px;
+  margin-left: auto;
+  text-align: right;
 }
-
-footer #publish-link a {
-  opacity: 1;
+footer #publish-link span {
+  opacity: 0.5;
 }
-
 footer button {
   background: none;
   color: var(--text);
+  padding: 2px 6px;
 }
-
-button::before {
+footer button::before {
   display: inline-block;
   content: "";
   margin-right: 8px;
@@ -293,23 +272,22 @@ button::before {
   height: 16px;
   border-radius: 16px;
 }
-
-button#light::before {
+footer button#light::before {
   background: #FFFEFD;
   box-shadow: inset 0 0 0 2.5px rgba(0, 0, 0, 0.1);
 }
-
-button#sepia::before {
+footer button#sepia::before {
   background: #FFE6CA;
   box-shadow: inset 0 0 0 2.5px rgba(0, 0, 0, 0.1);
 }
-
-button#dark::before {
+footer button#dark::before {
   background: #000000;
-  box-shadow: inset 0 0 0 2.5px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 2.5px rgba(255, 255, 255, 0.15);
 }
 
-/*---------------------Code Block---------------------*/
+/*------------------------------------------------------------------------------
+Code Block
+*/
 pre code {
   font-family: monospace;
   display: block;
@@ -336,47 +314,40 @@ pre code {
   /* Internet Explorer/Edge */
   user-select: all;
   /* Non-prefixed version, currently
-      supported by Chrome, Opera and Firefox */
+  supported by Chrome, Opera and Firefox */
 }
-
 pre code .keyword {
   color: var(--keyword);
 }
-
 pre code .type {
   color: var(--type);
 }
-
 pre code .call {
   color: var(--call);
 }
-
 pre code .property {
   color: var(--property);
 }
-
 pre code .number {
   color: var(--number);
 }
-
 pre code .string {
   color: var(--string);
 }
-
 pre code .comment {
   color: var(--comment);
   opacity: 0.4;
 }
-
 pre code .dotAccess {
   color: var(--dot-access);
 }
-
 pre code .preprocessing {
   color: var(--preprocessing);
 }
 
-/*---------------------Fonts---------------------*/
+/*------------------------------------------------------------------------------
+Fonts
+*/
 @font-face {
   font-family: "TextaAlt";
   src: url("/fonts/TextaAlt-Black.otf");
