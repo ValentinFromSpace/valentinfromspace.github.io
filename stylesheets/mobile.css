@@ -13,9 +13,10 @@ footer .groups .group {
 }
 
 @media (max-width: 900px) {
-  article {
+  main {
     margin-top: 32px;
   }
+
   article .article-header {
     margin-bottom: 32px;
   }

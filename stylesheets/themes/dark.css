@@ -1,12 +1,12 @@
 :root {
     --background: #000000;
 
-    --seperator: rgba(255,255,255,0.12);
+    --seperator: #FFFFFF15;
 
     --text: #FFFFFF;
 
     --block-border: #404040;
-    --block-shadow: #000;
+    --block-shadow: transparent;
     --block-background: #151017;
 }
 

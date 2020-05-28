@@ -11,24 +11,16 @@ body {
 }
 
 main {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-article {
-  margin: 88px 0 0 0;
+  margin: 88px auto;
+  max-width: 700px;
 }
 
 .article-header {
-  margin: 0 0 64px 0;
+  margin-bottom: 64px;
 }
 
-body[theme=light] .seperator, body[theme=sepia] .seperator {
-  border-bottom: 4px solid rgba(0, 0, 0, 0.06);
-}
-
-body[theme=dark] .seperator {
-  border-bottom: 4px solid rgba(255, 255, 255, 0.12);
+.seperator, article hr {
+  border-bottom: 4px solid var(--seperator);
 }
 
 nav, footer {
@@ -74,28 +66,55 @@ a {
 /*------------------------------------------------------------------------------
 Markdown
 */
-article h1 {
+article {
   font-family: "TextaAlt";
+}
+article h1 {
   font-size: 58px;
-  line-height: 58px;
   font-weight: 800;
   margin: 0;
 }
 article h2 {
-  font-family: serif;
-  font-size: 32px;
-  margin-top: 64px;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 64px 0 36px 0;
+  padding-bottom: 16px;
+  border-bottom: solid 2px var(--seperator);
 }
-article img {
-  box-shadow: 0 10px 20px 0 var(--block-shadow), inset 0 0 0 0.5px var(--block-border);
+article h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 54px 0 28px 0;
+}
+article h4, article h5, article h6 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 40px 0 18px 0;
+}
+article hr {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 64px 0;
+}
+article figure {
+  margin: 0 0 36px 0;
+  padding: 0;
+}
+article figure img {
+  background: var(--block-background);
   border-radius: 8px;
-  padding: 0.5px;
-  margin: 36px 0 0 0;
+  box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 1px var(--block-border);
+  margin: 0;
   width: 100%;
   height: auto;
 }
-article img + em {
-  font-family: "TextaAlt";
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  article figure img {
+    box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 0.5px var(--block-border);
+  }
+}
+article figure figcaption {
   opacity: 0.6;
   font-size: 20px;
   font-weight: 600;
@@ -105,7 +124,6 @@ article img + em {
 article .date {
   display: inline-block;
   opacity: 0.6;
-  font-family: "TextaAlt";
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0;
@@ -116,18 +134,18 @@ article p {
   font-family: serif;
   font-size: 24px;
   line-height: 36px;
-  margin: 36px 0 0 0;
-  opacity: 0.85;
+  margin: 0 0 36px 0;
   color: var(--text);
+  vertical-align: top;
 }
 article p code {
   font-family: monospace;
   font-size: 18px;
   color: #F72057;
   padding: 4px 10px;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px 0 var(--block-shadow), inset 0 0 0 0.5px var(--block-border);
   background: var(--block-background);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 1px var(--block-border);
   -webkit-touch-callout: all;
   /* iOS Safari */
   -webkit-user-select: all;
@@ -142,26 +160,80 @@ article p code {
   /* Non-prefixed version, currently
   supported by Chrome, Opera and Firefox */
 }
-article p a {
-  font-weight: 500;
-  text-decoration: none;
-  opacity: 0.6;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  article p code {
+    box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 0.5px var(--block-border);
+  }
 }
-article p a:hover {
+article p a {
+  border-bottom: 3px solid #FF9519;
   text-decoration: none;
-  opacity: 1;
 }
 article blockquote {
-  margin: 36px 0 0 0;
+  margin: 0 0 36px 0;
   padding: 24px 44px 24px 35px;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 8px;
   border-left: 9px solid #FF9519;
-  box-shadow: 0 10px 20px 0 var(--block-shadow), inset 0 0 0 0.5px var(--block-border);
   background: var(--block-background);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 1px var(--block-border);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  article blockquote {
+    box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 0.5px var(--block-border);
+  }
 }
 article blockquote p {
   margin: 0;
+}
+article table {
+  font-size: 18px;
+  background: var(--block-background);
+  box-shadow: 0 10px 20px 0 var(--block-shadow);
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  position: relative;
+  z-index: 99;
+}
+article table td, article table th {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  text-align: left;
+}
+article table code {
+  font-size: 16px;
+}
+article table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+article table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+article table td:first-child, article table th:first-child {
+  border-left: none;
+}
+article table th {
+  border-top: none;
+  background-color: var(--tr-background);
+}
+article table tr:nth-child(even) {
+  background-color: var(--alernating-background);
+}
+article table tr:first-child th:first-child {
+  border-radius: 0 0 0 8px;
+}
+article table tr:first-child th:last-child {
+  border-radius: 8px 0 0 0;
+}
+article table tr:last-child th:first-child {
+  border-radius: 0 0 8px 0;
+}
+article table tr:last-child th:last-child {
+  border-radius: 0 8px 0 0;
 }
 
 /*------------------------------------------------------------------------------
@@ -221,7 +293,7 @@ footer ul {
   margin: 0;
   padding: 0;
 }
-footer .seperator {
+footer .seperator, footer article hr, article footer hr {
   margin-bottom: 32px;
 }
 footer .links {
@@ -291,10 +363,9 @@ Code Block
 pre code {
   font-family: monospace;
   display: block;
-  border-radius: 8px;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px 0 var(--block-shadow), inset 0 0 0 0.5px var(--block-border);
   background: var(--block-background);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 1px var(--block-border);
   margin: 36px 0 1.5em 0;
   padding: 18px 22px;
   line-height: 1.4em;
@@ -302,19 +373,11 @@ pre code {
   overflow-x: auto;
   white-space: pre;
   -webkit-overflow-scrolling: touch;
-  -webkit-touch-callout: all;
-  /* iOS Safari */
-  -webkit-user-select: all;
-  /* Safari */
-  -khtml-user-select: all;
-  /* Konqueror HTML */
-  -moz-user-select: all;
-  /* Old versions of Firefox */
-  -ms-user-select: all;
-  /* Internet Explorer/Edge */
-  user-select: all;
-  /* Non-prefixed version, currently
-  supported by Chrome, Opera and Firefox */
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  pre code {
+    box-shadow: 0 10px 20px 0 var(--block-shadow), 0 0 0 0.5px var(--block-border);
+  }
 }
 pre code .keyword {
   color: var(--keyword);

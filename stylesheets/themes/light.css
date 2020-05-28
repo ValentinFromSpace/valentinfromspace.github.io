@@ -1,12 +1,12 @@
 :root {
     --background: #FFFEFD;
 
-    --seperator: 0,0,0,0.06;
+    --seperator: #EFEEED;
 
     --text: #252525;
 
     --block-border: #D3D3D3;
-    --block-shadow: rgba(0,0,0,0.05);
+    --block-shadow: rgba(0,0,0,0.04);
     --block-background: #FFFFFF;
 }
 
@@ -20,4 +20,9 @@ code {
     --comment: #000000;
     --dot-access: #FF5700;
     --preprocessing: #646485;
+}
+
+table {
+    --tr-background: rgba(0,0,0,0.03);
+    --alernating-background: rgba(0,0,0,0.01);
 }

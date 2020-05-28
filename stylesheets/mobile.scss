@@ -16,13 +16,11 @@ footer {
 }
 
 @media (max-width: 900px) {
-    nav {
-
+    main {
+        margin-top: 32px;
     }
 
     article {
-        margin-top: 32px;
-
         .article-header {
             margin-bottom: 32px;
         }
