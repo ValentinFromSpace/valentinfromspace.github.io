@@ -31,6 +31,8 @@ main {
     grid-area: banner;
     max-width: 100%;
     border: none !important;
+    border-radius: 3px;
+    user-select: none;
 }
 
 h5 {
@@ -73,9 +75,9 @@ nav label a {
 }
 
 nav .section-header {
-    display: none;
     opacity: 0.4;
     font-size: 0.8em;
+    font
 }
 
 nav > div:first-child {
@@ -90,10 +92,6 @@ nav > div:not(:first-child) {
 
 nav ul {
     margin-top: 0;
-}
-
-nav ul li.not-pinned {
-    color: rgba(0,0,0,0.2);
 }
 
 a.reference-link {
@@ -234,13 +232,14 @@ details > summary::-webkit-details-marker {
         margin: 2em auto;
         padding: 0 20px;
     }
-    
+
     #banner {
         margin: -2em -20px 0 -20px;
         min-width: 100vw;
         content: url("/images/starscape [crop].png");
+        border-radius: 0;
     }
-    
+
     article {
         max-width: calc(100vw - 40px);
     }
