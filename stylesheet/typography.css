@@ -1,0 +1,108 @@
+@import url("../font/valkyrie.css");
+@import url("../font/valkyrie_caps.css");
+@import url("../font/moranga.css");
+
+html {
+	font-family: Valkyrie;
+	font-size: 20px;
+	line-height: 1.5em;
+	max-width: 500px;
+	
+	--blue: #0076BA;
+	--gray: #F2F2F2;
+}
+
+h1 {
+	font-family: Moranga;
+	font-weight: 300;
+	font-size: 40px;
+	margin: 1.5em 0 1em 0;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-family: Moranga;
+	font-weight: normal;
+	font-size: 22px;
+	margin: 1.5em 0 0.5em 0;
+}
+
+h3, h4, h5, h6 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 1em 0 0.5em 0;
+}
+
+p,
+ul,
+article img,
+article table,
+article iframe {
+	margin: 0 0 1em 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	background-color: var(--gray);
+}
+
+blockquote {
+	font-style: italic;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding-left: 40px;
+	background-image: url("../img/list-style-image.svg");
+	background-position-x: 10px;
+	background-position-y: 0.65em;
+	background-repeat: no-repeat;
+}
+
+li+li {
+	margin-top: 8px;
+}
+
+a {
+	color: var(--blue);
+	text-decoration: none;
+}
+
+a:hover {
+	background: var(--gray);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid var(--gray);
+}
+
+th, td {
+	padding: 4px 8px;
+}
+
+.small-caps {
+	font-family: ValkyrieCaps;
+}
+
+code {
+	background: var(--gray);
+	font-size: 0.8em;
+	font-family: monospace;
+	padding: 3px 4px;
+	border-radius: 4px;
+}
+
+hr {
+	border-width: 4px;
+	border-color: var(--gray);
+	margin: 4em 0;
+}
