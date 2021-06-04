@@ -8,6 +8,9 @@
 html {
 	padding: 0 20px 25vh 20px;
 	margin: 0 auto;
+	max-width: 500px;
+	background: rgba(120, 120, 128, 0.001);
+	position: relative;
 }
 
 /* ------ */
@@ -21,16 +24,23 @@ nav {
 	justify-content: space-evenly;
 	margin-top: 64px;
 	background: var(--gray);
+	border-radius: 16px;
+	overflow: hidden;
+	padding: 4px;
 }
 
 nav a {
 	color: black;
-	padding: 12px 0;
+	border-radius: 12px;
+	padding: 8px 0;
+	flex-grow: 1;
+	text-align: center;
 }
 
 nav #selected {
 	padding-bottom: 9px;
-	border-bottom: 3px solid black;
+	background: white;
+	box-shadow: 0 12px 18px 0 rgba(0,0,0,0.12);
 }
 
 .back-button {
@@ -42,7 +52,7 @@ nav #selected {
 
 
 
-/*MARK: - IMG HEADER */
+/*MARK: - HEADER */
 
 header {
 	display: flex;
@@ -52,35 +62,22 @@ header {
 
 header img {
 	width: 150px;
-	height: auto;
+	height: 150px;
+	background-color: var(--gray);
 }
 
 /* ------ */
 
 
-
-/*MARK: - PARAGRAPH LINK */
-
-.paragraph-link {
-	display: block;
-	color: black;
-}
-
-.paragraph-link h2 {
-	position: relative
-}
-
-.paragraph-link h2::after {
+.app-icon {
+	background: none;
+	width: 150px;
 	position: absolute;
-	content: url("../img/arrow-right.svg");
-	margin-left: 10px;
+	left: -150px;
 }
 
-/* ------ */
 
-
-
-/*MARK: - CARD LINK */
+/*MARK: - CARD */
 
 .card {
 	display: block;
@@ -88,17 +85,118 @@ header img {
 	border: 1px solid var(--gray);
 	margin: 0 0 1em 0;
 	color: black;
+	background: white;
+	
+	border-radius: 16px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.02);
+	transition-property: transform, box-shadow;
+	transition-duration: 0.4s;
 }
 
 .card::before {
 	content: attr(date);
 	float: right;
-	text-transform: uppercase;
+	text-transform: lowercase;
+	font-family: ValkyrieCaps;
 }
 
 .card p {
 	opacity: 0.6;
-	margin-top: 0.2em;
+	margin: 8px 0;
+}
+
+.card:hover {
+	transform: translate(0, -2px);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.06);
+	background: white;
+}
+
+.recent {
+	/*...*/
+}
+
+.verify {
+	text-align: center;
+	margin: 64px 0;
+	border-width: 2px;
+}
+
+.verify img {
+	display: block;
+	background: none;
+	width: 44px;
+	margin: 24px auto;
+}
+
+.verify h1 {
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 32px;
+	margin: 8px auto;
+	padding-bottom: 4px;
+	border-bottom: 4px dotted var(--gray);
+	transition: border-color 0.14s;
+}
+
+.verify p {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	opacity: 0.2;
+	max-width: 340px;
+	margin: 24px auto;
+}
+
+.verify:hover h1 {
+	border-color: var(--blue);
+}
+
+.dummy {
+	background: rgba(255,50,0,0.1);
+	color: rgba(255,50,0,1);
+	border-radius: 6px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 4px 6px;
+}
+
+/* ------ */
+
+
+
+/*MARK: - MENTORS */
+
+.grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 8px;
+	margin: 64px 0;
+	width: 110%;
+	margin-left: -5%;
+}
+
+.person {
+	max-width: 300px;
+	justify-self: center;
+}
+
+.person h2 {
+	text-align: center;
+	margin-top: 16px;
+}
+
+.person p {
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.person img {
+	display: block;
+	width: 80px;
+	margin: auto;
+	border-radius: 99px;
 }
 
 /* ------ */
@@ -107,19 +205,26 @@ header img {
 
 /*MARK: - BREAKPOINTS */
 
+@media screen and (max-width: 560px) {
+	.grid {
+		grid-template-columns: 100%;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
 @media screen and (max-width: 420px) {
 	nav {
 		position: fixed;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		bottom: 8px;
+		left: 8px;
+		right: 8px;
 		z-index: 99;
-		padding-bottom: env(safe-area-inset-bottom, 0);
-		border-top: 0.5px solid rgba(0,0,0,0.3);
+		margin-bottom: env(safe-area-inset-bottom, 0);
 	}
 	
 	nav a {
-		padding: 16px 0;
+		padding: 14px 0;
 	}
 	
 	article {
@@ -141,12 +246,13 @@ header img {
 	
 	header img {
 		width: 120px;
+		height: 120px;
 	}
 }
 
 @media print {
-	nav {
-		display: none;
+	body > :not(article) {
+		display: none !important;
 	}
 }
 

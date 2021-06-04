@@ -5,11 +5,13 @@
 html {
 	font-family: Valkyrie;
 	font-size: 20px;
-	line-height: 1.5em;
-	max-width: 500px;
 	
 	--blue: #0076BA;
 	--gray: #F2F2F2;
+}
+
+* {
+	line-height: 1.5em;
 }
 
 h1 {
@@ -44,11 +46,15 @@ article iframe {
 img {
 	width: 100%;
 	height: auto;
-	background-color: var(--gray);
+}
+
+article img {
+	border-radius: 8px;
 }
 
 blockquote {
 	font-style: italic;
+	font-size: 22px;
 }
 
 ul {
@@ -72,7 +78,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+article a:hover {
 	background: var(--gray);
 }
 
@@ -98,7 +104,7 @@ code {
 	font-size: 0.8em;
 	font-family: monospace;
 	padding: 3px 4px;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 
 hr {
