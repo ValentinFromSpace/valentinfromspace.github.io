@@ -105,6 +105,9 @@ code {
 	font-family: monospace;
 	padding: 3px 4px;
 	border-radius: 6px;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 hr {
