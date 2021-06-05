@@ -139,7 +139,7 @@ header img {
 	transition: border-color 0.14s;
 }
 
-.verify p {
+.verify footer {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	opacity: 0.2;
@@ -159,6 +159,21 @@ header img {
 	font-size: 12px;
 	font-weight: 500;
 	padding: 4px 6px;
+}
+
+.raw {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+.raw a {
+	color: gray;
+	background: rgba(0,0,0,0.04);
+	padding: 4px 6px;
+	border-radius: 6px;
 }
 
 /* ------ */
@@ -220,7 +235,7 @@ header img {
 		left: 8px;
 		right: 8px;
 		z-index: 99;
-		margin-bottom: env(safe-area-inset-bottom, 0);
+		margin-bottom: calc(env(safe-area-inset-bottom, 0) * 1.6);
 	}
 	
 	nav a {
