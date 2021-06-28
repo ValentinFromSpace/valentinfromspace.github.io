@@ -5,7 +5,7 @@
 html {
 	font-family: Valkyrie;
 	font-size: 20px;
-	
+
 	--blue: #0076BA;
 	--gray: #F2F2F2;
 }
@@ -53,8 +53,7 @@ article img {
 }
 
 blockquote {
-	font-style: italic;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 ul {
