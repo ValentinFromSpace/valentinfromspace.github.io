@@ -10,7 +10,8 @@
     <meta property="og:image" content="open-graph-image.jpg">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="/stylesheet/normalize.css" type="text/css"/>
-    <style media="screen">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style>
       html {
         background: rgba(255, 242, 249, 1);
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -43,7 +44,7 @@
 
       a {
         display: block;
-        background: #960047;
+        background-color: #960047;
         color: white;
         border-radius: 0.6em;
         padding: 0.4em 0;
@@ -51,11 +52,13 @@
         font-weight: 500;
         text-decoration: none;
         text-align: center;
-        margin: 1.4em 0;
+        margin: 1.4em auto;
         transition: all 0.4s;
       }
 
-      a:is(:hover, :focus) {
+      a:is(:hover, :focus),
+      .button:is(:hover, :focus) {
+        cursor: pointer;
         transform: translateY(-2px);
         box-shadow: 0 8px 12px 4px rgba(115, 0, 61, 0.15);
       }
@@ -76,6 +79,20 @@
         margin-bottom: 1em;
       }
 
+      input {
+        background: none;
+      }
+
+      #mc_embed_signup .button,
+      #mc_embed_signup .button:hover {
+        background-color: #960047;
+      }
+
+      #mc_embed_signup form {
+        padding: 0;
+        margin: 2em 0;
+      }
+
       @media screen and (max-width: 42em) {
         body {
           margin-top: 0;
@@ -94,11 +111,38 @@
   </head>
   <body>
     <img src="cover.jpg" alt="Cover of Sars Amatoria">
+
     <h1>"Ein lyrisches Schriftstück von Weltklasse!" — Jörgo</h1>
     <a href="Sars-Amatoria.pdf" download>$29.99 →</a>
+
     <p><b>Jetzt erhältlich in ihrem lokalen Buch-Laden!</b></p>
     <p>Publius Covidius schafft wieder einen sofortigen Klassiker: Sars Amatoria erzählt die herzzereißende Geschichte von Schmerz und Leid im Jahre 2021 und wie trotz jedem Hinderniss heroische Menschen immer noch zu Liebe finden.</p>
     <p><em>Vom Einband:</em> Wir leben in herausfordernden Zeiten. Es ist nicht einfach in 2021 Mensch zu sein. Die globale Pandemie hält uns fest im Griff. Viele vorherige Annehmlichkeiten bleiben uns verschlossen. Wie können wir mit dieser harten Realität umgehen? Und wichtiger noch: wie finden wir Liebe in dieser verkehrten Welt?</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://icloud.us20.list-manage.com/subscribe/post?u=b4b8e198aae76a4159cbebe4c&amp;id=3471b33a0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+    	<h2>Abonniere den Newsletter</h2>
+    <div class="mc-field-group">
+    	<label for="mce-EMAIL" hidden>Email</label>
+    	<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+    <div class="mc-field-group">
+    	<label for="mce-FNAME" hidden>Name</label>
+    	<input type="text" value="" placeholder="Name" name="FNAME" class="" id="mce-FNAME">
+    </div>
+    	<div id="mce-responses" class="clear">
+    		<div class="response" id="mce-error-response" style="display:none"></div>
+    		<div class="response" id="mce-success-response" style="display:none"></div>
+    	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b4b8e198aae76a4159cbebe4c_3471b33a0c" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+
     <h2>Presse</h2>
     <p>"Ein lyrisches Schriftstück von Weltklasse! In solch schweren Zeiten habe ich verzweifelt nach GENAU solch einem Ratgeber gesucht. Ich werde der neue Anführer des weitumkämpften Damenrudels sein. Besonders die einzigartige und bestens geschilderte Masche mit der Katze ist nur jedem unberührtem Jüngling, der noch auf der Suche nach seiner holden Maid ist, zu empfehlen! Dieses Werk hat 5 Sterne und der Verfasser einen Nobelpreis im Bereich 'Kunst' verdient! Ich ziehe dankenswert meinen Hirtenhut und mache mich auf, Schäfchen zu finden und führen!"</p>
     <p>— Leonard von <em>Die Jörgo Gazelle</em></p>
