@@ -105,24 +105,19 @@ nav a {
 
 @font-face {
 	font-family: "Titilllium";
-	src: url("/font/TitilliumWeb-Regular.ttf");
+	src: url("./font/TitilliumWeb-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Titilllium";
-	src: url("/font/TitilliumWeb-SemiBold.ttf");
+	src: url("./font/TitilliumWeb-SemiBold.ttf");
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Titilllium";
-	src: url("/font/TitilliumWeb-Bold.ttf");
+	src: url("./font/TitilliumWeb-Bold.ttf");
 	font-weight: 700;
-}
-
-@font-face {
-	font-family: "ZenTokyoZoo";
-	src: url("/font/ZenTokyoZoo-Regular.ttf");
 }
 
 @keyframes pulse {
